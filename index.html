@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lexicon Atelier · 英语精读互动书架</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top Navigation Bar -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand" id="brand-home" role="button" tabindex="0" title="返回书架首页">
+        <span class="brand-icon">📖</span>
+        <div>
+          <h1 class="brand-title">Lexicon Atelier</h1>
+          <p class="brand-sub">CET-6 &amp; IELTS 7.5+ 精读讲义互动书架</p>
+        </div>
+      </div>
+
+      <div class="topbar-stats" id="global-stats">
+        <div class="stat-chip">📚 讲义 <strong id="stat-docs">0</strong></div>
+        <div class="stat-chip">🔤 词库 <strong id="stat-vocab">0</strong></div>
+        <div class="stat-chip stat-mastered">
+          ✅ 已掌握 <strong id="stat-mastered">0</strong> (<span id="stat-rate">0%</span>)
+        </div>
+      </div>
+
+      <div class="topbar-actions">
+        <button class="btn btn-ghost" id="btn-export" title="导出学习进度 JSON 备份">⬇ 导出进度</button>
+        <button class="btn btn-ghost" id="btn-import" title="导入历史进度 JSON">⬆ 导入进度</button>
+        <input type="file" id="import-file" accept=".json" hidden />
+        <button class="btn btn-icon" id="btn-theme" title="切换护眼浅色 / 暗黑模式">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Catalog / Bookshelf View -->
+  <main class="container" id="catalog-view">
+    <section class="toolbar">
+      <div class="genre-tabs" id="genre-tabs" role="tablist" aria-label="按题材分类">
+        <button class="genre-pill active" data-genre="all">全部题材</button>
+        <button class="genre-pill" data-genre="原著">📘 原著</button>
+        <button class="genre-pill" data-genre="外刊">📰 外刊</button>
+        <button class="genre-pill" data-genre="学术社科">🎓 学术社科</button>
+        <button class="genre-pill" data-genre="美剧口语">🎬 美剧口语</button>
+        <button class="genre-pill" data-genre="演讲">🎙️ 演讲</button>
+      </div>
+
+      <div class="search-controls">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="search" id="search-input" placeholder="搜索书名、标题、考点词汇或标签..." />
+        </div>
+        <select id="sort-select" class="select-input" aria-label="排序方式">
+          <option value="date-desc">最新日期优先</option>
+          <option value="date-asc">最早日期优先</option>
+          <option value="vocab-desc">词汇量从多到少</option>
+          <option value="mastery-asc">待复习优先</option>
+        </select>
+        <button class="btn btn-outline" id="btn-only-bookmarked" title="仅显示收藏的讲义">⭐ 仅看收藏</button>
+      </div>
+    </section>
+
+    <section class="catalog-grid" id="catalog-grid">
+      <!-- Cards injected by app.js -->
+    </section>
+
+    <div class="empty-state hidden" id="catalog-empty">
+      <div class="empty-emoji">📭</div>
+      <p>当前筛选条件下暂无讲义，试试切换题材或清空搜索词。</p>
+    </div>
+  </main>
+
+  <!-- Immersive Reading Workspace View -->
+  <section class="workspace hidden" id="workspace-view">
+    <div class="workspace-header">
+      <div class="ws-left">
+        <button class="btn btn-outline" id="btn-back">← 返回书架</button>
+        <span class="badge genre-badge" id="ws-genre"></span>
+        <h2 class="ws-title" id="ws-title"></h2>
+        <span class="ws-meta" id="ws-meta"></span>
+      </div>
+      <div class="ws-actions">
+        <button class="btn btn-ghost" id="btn-toggle-pdf" title="展开/收起 PDF 阅读区">📄 切换双栏</button>
+        <a class="btn btn-outline" id="btn-open-pdf" target="_blank" rel="noopener">↗ 新窗口打开</a>
+        <a class="btn btn-primary" id="btn-download-pdf" download>⬇ 下载 PDF</a>
+      </div>
+    </div>
+
+    <div class="workspace-body" id="workspace-body">
+      <!-- Left Pane: Embedded PDF Reader -->
+      <div class="pdf-pane" id="pdf-pane">
+        <iframe id="pdf-frame" title="PDF 精读讲义阅读器"></iframe>
+        <div class="pdf-fallback">
+          <span>若移动端浏览器未直接渲染内嵌 PDF，请点击右上角「新窗口打开」或「下载 PDF」。</span>
+        </div>
+      </div>
+
+      <!-- Right Pane: Interactive Study Panel -->
+      <aside class="study-pane" id="study-pane">
+        <div class="study-tabs" role="tablist">
+          <button class="study-tab active" data-tab="vocab">🔤 考点词表 (<span id="tab-vocab-count">0</span>)</button>
+          <button class="study-tab" data-tab="sentences">🧩 长难句 (<span id="tab-sent-count">0</span>)</button>
+          <button class="study-tab" data-tab="flashcards">🃏 闪卡自测</button>
+        </div>
+
+        <!-- Tab 1: Vocabulary Interactive List -->
+        <div class="tab-panel active" id="panel-vocab">
+          <div class="panel-controls">
+            <div class="filter-pills" id="vocab-filters">
+              <button class="mini-pill active" data-filter="all">全部</button>
+              <button class="mini-pill pill-cet6" data-filter="cet6">CET-6</button>
+              <button class="mini-pill pill-ielts" data-filter="ielts">IELTS</button>
+              <button class="mini-pill" data-filter="unmastered">未掌握</button>
+              <button class="mini-pill" data-filter="review">🔖 需复习</button>
+              <button class="mini-pill" data-filter="star">⭐ 收藏</button>
+            </div>
+            <div class="panel-sub-actions">
+              <input type="search" id="vocab-search" class="mini-search" placeholder="筛选本篇单词..." />
+              <button class="btn btn-sm btn-outline" id="btn-mask-meaning" title="遮盖中文释义进行背词自测">👁️ 隐藏释义</button>
+            </div>
+          </div>
+          <div class="vocab-list" id="vocab-list"></div>
+        </div>
+
+        <!-- Tab 2: Complex Sentences -->
+        <div class="tab-panel" id="panel-sentences">
+          <div class="panel-controls">
+            <span class="hint-text">点击「复制模板」可直接粘贴到你的雅思/六级写作笔记中</span>
+          </div>
+          <div class="sentences-list" id="sentences-list"></div>
+        </div>
+
+        <!-- Tab 3: Interactive 3D Flashcards -->
+        <div class="tab-panel" id="panel-flashcards">
+          <div class="fc-toolbar">
+            <div class="fc-deck-switch">
+              <button class="mini-pill active" data-deck="all">本篇全部词</button>
+              <button class="mini-pill" data-deck="unmastered">仅未掌握 / 需复习</button>
+            </div>
+            <div class="fc-counter" id="fc-counter">0 / 0</div>
+          </div>
+
+          <div class="flashcard-stage">
+            <div class="flashcard" id="flashcard" tabindex="0" role="button" aria-label="点击翻转闪卡">
+              <div class="fc-face fc-front">
+                <div class="fc-tags" id="fc-front-tags"></div>
+                <div class="fc-word" id="fc-word">Word</div>
+                <div class="fc-phonetic" id="fc-phonetic">/phonetic/</div>
+                <div class="fc-tts-row">
+                  <button class="btn btn-sm btn-outline fc-tts-btn" data-accent="en-GB">🇬🇧 英音朗读</button>
+                  <button class="btn btn-sm btn-outline fc-tts-btn" data-accent="en-US">🇺🇸 美音朗读</button>
+                </div>
+                <div class="fc-tip">点击卡片或按空格键翻转查看释义与原句</div>
+              </div>
+              <div class="fc-face fc-back">
+                <div class="fc-back-word" id="fc-back-word">Word</div>
+                <div class="fc-section">
+                  <div class="fc-label">考点含义 &amp; 语境生义</div>
+                  <div class="fc-text" id="fc-meaning"></div>
+                </div>
+                <div class="fc-section">
+                  <div class="fc-label">高频搭配 &amp; 雅思同义替换</div>
+                  <div class="fc-text" id="fc-colloc"></div>
+                </div>
+                <div class="fc-section">
+                  <div class="fc-label">原著例句</div>
+                  <div class="fc-text fc-sentence" id="fc-sentence"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fc-controls">
+            <button class="btn btn-outline" id="fc-prev">⬅ 上一张</button>
+            <button class="btn btn-warn" id="fc-mark-review">🔖 模糊/需复习</button>
+            <button class="btn btn-success" id="fc-mark-mastered">✅ 已掌握</button>
+            <button class="btn btn-outline" id="fc-shuffle" title="随机打乱卡片顺序">🔀 洗牌</button>
+            <button class="btn btn-outline" id="fc-next">下一张 ➡</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

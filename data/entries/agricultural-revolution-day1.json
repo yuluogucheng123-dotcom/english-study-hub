@@ -1,0 +1,465 @@
+{
+  "id": "agricultural-revolution-day1",
+  "title": "The Agricultural Revolution",
+  "genre": "学术社科",
+  "day": 1,
+  "date": "2026-11-22",
+  "wordCount": 277,
+  "paragraphs": [
+    "The transition from foraging to agriculture, often hailed as humanity’s greatest leap forward, was in hindsight a remarkably ambivalent bargain. For millennia, hunter-gatherers subsisted on a diverse and fluctuating diet, adapting their daily routines to the seasonal rhythms of wild flora and fauna. Because they rarely depended on a single staple crop, famine was relatively uncommon, and infectious diseases seldom decimated their sparse, nomadic bands. Yet around ten thousand years ago, *Homo sapiens* began dedicating unprecedented time and physical labor to cultivating a handful of domesticated species—most notably wheat, rice, and maize.",
+    "Rather than emancipating humans from harsh toil, the Agricultural Revolution bound them to the soil. Wheat demanded relentless weeding, irrigation, and pest control—tasks for which the human spine and knees had never evolved. Paradoxically, while the aggregate supply of calories surged, individual nutrition deteriorated, as monotonous cereal-based diets deprived early farmers of essential vitamins and minerals. Moreover, dense sedentary settlements became breeding grounds for pathogens that readily jumped from domesticated livestock to human hosts, triggering devastating epidemics unknown to their wandering ancestors.",
+    "Why, then, did societies persist in an arrangement that compromised individual health and longevity? The answer lies in an evolutionary trap: collective survival outpaced personal well-being. A village sustained by grain could support exponentially more offspring per square kilometer than a foraging territory, even if those children grew up stunted and malnourished. Once populations swelled beyond the carrying capacity of wild ecosystems, reverting to hunting and gathering became virtually impossible; abandonment of the fields meant immediate starvation. Thus, incremental generations walked unknowingly into a gilded cage, trading leisure and biological resilience for demographic expansion and the eventual rise of complex civilizations."
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "original": "The transition from foraging to agriculture, often hailed as humanity’s greatest leap forward, was in hindsight a remarkably ambivalent bargain.",
+      "backbone": "<b>The transition</b> (主语) <b>was</b> (系动词) <b>a remarkably ambivalent bargain</b> (表语).",
+      "grammar": "1. <b>过去分词短语作插入语/后置定语</b>：<code>often hailed as humanity’s greatest leap forward</code> 置于主语和系动词之间，用于引出“世俗普遍观点”，与后文的真实评价形成强烈反差。<br>2. <b>介词短语作评价状语</b>：<code>in hindsight</code>（事后看来）插入系动词与表语之间，赋予全句客观、审视历史语境的学术语气。<br>3. <b>高分词汇张力</b>：用 <code>greatest leap forward</code> 与 <code>ambivalent bargain</code> 形成鲜明语义对照。",
+      "template": "<b>【雅思大作文 / 六级议论文开头反差模板】</b><br>The shift/transition from A to B, often hailed as [普遍赞誉], is in hindsight a remarkably ambivalent/double-edged [性质名词].<br><b>【备考仿写示例（科技与人工智能话题）】</b><br>The transition from traditional classrooms to AI-driven learning, often hailed as education’s greatest leap forward, is in hindsight a remarkably ambivalent bargain that boosts efficiency at the cost of human interaction."
+    },
+    {
+      "id": 2,
+      "original": "Paradoxically, while the aggregate supply of calories surged, individual nutrition deteriorated, as monotonous cereal-based diets deprived early farmers of essential vitamins and minerals.",
+      "backbone": "<b>individual nutrition</b> (主语) <b>deteriorated</b> (谓语).",
+      "grammar": "1. <b>评注性状语前置</b>：句首 <code>Paradoxically</code>（讽刺的是/矛盾地）直接点明“宏观增长”与“微观恶化”的悖论逻辑。<br>2. <b>while 引导让步/对比状语从句</b>：<code>while the aggregate supply of calories surged</code> 将“总热量激增”与主句“个体营养恶化”精准对置。<br>3. <b>as 引导原因状语从句 + 固定搭配</b>：<code>as monotonous cereal-based diets deprived early farmers of...</code> 解释悖论成因，并活用高频考点搭配 <code>deprive sb. of sth.</code>。",
+      "template": "<b>【雅思大作文 / 图表作文对比因果模板】</b><br>Paradoxically, while the aggregate [宏观指标] has surged, individual [微观体验] has deteriorated, as [核心原因] deprives people of [关键要素].<br><b>【备考仿写示例（经济发展与生活质量话题）】</b><br>Paradoxically, while the aggregate wealth of modern cities has surged, individual mental well-being has deteriorated, as relentless competition deprives urban residents of leisure and social connection."
+    },
+    {
+      "id": 3,
+      "original": "Moreover, dense sedentary settlements became breeding grounds for pathogens that readily jumped from domesticated livestock to human hosts, triggering devastating epidemics unknown to their wandering ancestors.",
+      "backbone": "<b>dense sedentary settlements</b> (主语) <b>became</b> (系动词) <b>breeding grounds for pathogens</b> (表语).",
+      "grammar": "1. <b>隐喻型名词短语</b>：<code>breeding grounds for...</code>（……的温床），在雅思写作中用于描述负面现象的滋生环境极富地道感。<br>2. <b>that 引导限制性定语从句</b>：修饰 <code>pathogens</code>，具体阐明病原体跨物种传播的机制。<br>3. <b>现在分词作结果状语 + 形容词短语后置定语</b>：<code>triggering devastating epidemics</code> 表示自然引发的严重后果；<code>unknown to their wandering ancestors</code> 简洁替代定语从句 <code>which were unknown to...</code>，紧凑有力。",
+      "template": "<b>【雅思大作文后果递进论证模板】</b><br>Moreover, [负面环境/现象] has become a breeding ground for [问题] that readily [动作表现], triggering [严重后果] unknown to previous generations.<br><b>【备考仿写示例（社交媒体与虚假信息话题）】</b><br>Moreover, unregulated social media platforms have become breeding grounds for misinformation that readily spreads across borders, triggering public anxiety unknown to previous generations."
+    },
+    {
+      "id": 4,
+      "original": "Thus, incremental generations walked unknowingly into a gilded cage, trading leisure and biological resilience for demographic expansion and the eventual rise of complex civilizations.",
+      "backbone": "<b>incremental generations</b> (主语) <b>walked</b> (谓语) <b>into a gilded cage</b> (状语).",
+      "grammar": "1. <b>因果总结与生动隐喻</b>：<code>Thus</code> 统领全篇结论；<code>walked unknowingly into a gilded cage</code>（不知不觉步入镀金牢笼）高度凝练地概括“看似进步实则受困”的演化陷阱。<br>2. <b>现在分词短语作伴随/解释状语</b>：<code>trading A for B</code>（以 A 换取 B）精确拆解这一历史交易的“代价”（leisure and biological resilience）与“收益”（demographic expansion and the eventual rise of complex civilizations），句式工整对称。",
+      "template": "<b>【雅思大作文 / 六级翻译利弊权衡升华模板】</b><br>Thus, modern society has walked unknowingly into a gilded cage, trading [珍贵价值 A] for [表面红利 B].<br><b>【备考仿写示例（城市化与消费主义话题）】</b><br>Thus, contemporary consumers have walked unknowingly into a gilded cage, trading privacy and psychological resilience for algorithmic convenience and instant gratification."
+    }
+  ],
+  "vocab": [
+    {
+      "id": 1,
+      "match": "foraging",
+      "type": "ielts",
+      "word": "foraging / n. (v. forage)",
+      "phonetic": "/ˈfɒrɪdʒɪŋ/",
+      "meaning": "觅食，采集，搜寻食物（雅思阅读人类学/动物行为学高频词）",
+      "collocations": "forage for food; foraging society / territory<br>同义替换：gathering, scavenging, hunting-and-gathering",
+      "sentence": "The transition from <b>foraging</b> to agriculture, often hailed as humanity’s greatest leap forward, was in hindsight a remarkably ambivalent bargain."
+    },
+    {
+      "id": 2,
+      "match": "hailed",
+      "type": "ielts",
+      "word": "hail / v.",
+      "phonetic": "/heɪl/",
+      "meaning": "熟义：下冰雹；呼喊。<br><b>本篇语境生义：盛赞，欢呼，把……誉为（be hailed as）</b>",
+      "collocations": "be hailed as a breakthrough / milestone; hail from<br>同义替换：acclaim, extol, praise as, applaud",
+      "sentence": "The transition from foraging to agriculture, often <b>hailed</b> as humanity’s greatest leap forward, was in hindsight a remarkably ambivalent bargain."
+    },
+    {
+      "id": 3,
+      "match": "in hindsight",
+      "type": "ielts",
+      "word": "in hindsight / phr.",
+      "phonetic": "/ɪn ˈhaɪndsaɪt/",
+      "meaning": "事后看来，回过头来看（雅思大作文反思/评价高频短语）",
+      "collocations": "with the benefit of hindsight; in retrospect<br>同义替换：in retrospect, looking back, after the fact",
+      "sentence": "The transition from foraging to agriculture, often hailed as humanity’s greatest leap forward, was <b>in hindsight</b> a remarkably ambivalent bargain."
+    },
+    {
+      "id": 4,
+      "match": "ambivalent",
+      "type": "ielts",
+      "word": "ambivalent / adj.",
+      "phonetic": "/æmˈbɪvələnt/",
+      "meaning": "矛盾的，爱恨交织的；<b>本篇语境：好坏参半的，利弊并存的</b>",
+      "collocations": "ambivalent attitude / feelings; remain ambivalent about<br>同义替换：mixed, equivocal, double-edged, contradictory",
+      "sentence": "The transition from foraging to agriculture, often hailed as humanity’s greatest leap forward, was in hindsight a remarkably <b>ambivalent</b> bargain."
+    },
+    {
+      "id": 5,
+      "match": "bargain",
+      "type": "ielts",
+      "word": "bargain / n.",
+      "phonetic": "/ˈbɑːɡən/",
+      "meaning": "熟义：便宜货，特价商品；讨价还价。<br><b>本篇语境生义：（利弊交换的）交易，协议，买卖</b>",
+      "collocations": "strike a bargain; a Faustian bargain; into the bargain<br>同义替换：trade-off, pact, arrangement, deal",
+      "sentence": "The transition from foraging to agriculture, often hailed as humanity’s greatest leap forward, was in hindsight a remarkably ambivalent <b>bargain</b>."
+    },
+    {
+      "id": 6,
+      "match": "subsisted",
+      "type": "ielts",
+      "word": "subsist / v.",
+      "phonetic": "/səbˈsɪst/",
+      "meaning": "勉强维持生计，靠……维持生存（常与 on 连用）",
+      "collocations": "subsist on a diet of...; subsistence farming / level<br>同义替换：survive on, live on, scrape by on",
+      "sentence": "For millennia, hunter-gatherers <b>subsisted</b> on a diverse and fluctuating diet, adapting their daily routines to the seasonal rhythms of wild flora and fauna."
+    },
+    {
+      "id": 7,
+      "match": "fluctuating",
+      "type": "cet6",
+      "word": "fluctuate / v. (adj. fluctuating)",
+      "phonetic": "/ˈflʌktʃueɪt/",
+      "meaning": "波动，起伏，不断变化（六级/雅思小作文趋势描述核心词）",
+      "collocations": "fluctuate wildly / seasonally; price fluctuations<br>同义替换：vary, shift, oscillate, rise and fall",
+      "sentence": "For millennia, hunter-gatherers subsisted on a diverse and <b>fluctuating</b> diet, adapting their daily routines to the seasonal rhythms of wild flora and fauna."
+    },
+    {
+      "id": 8,
+      "match": "flora and fauna",
+      "type": "ielts",
+      "word": "flora and fauna / phr.",
+      "phonetic": "/ˌflɔːrə ənd ˈfɔːnə/",
+      "meaning": "（某一地区或时期的）动植物群（雅思阅读环境/生态类必背）",
+      "collocations": "native / indigenous flora and fauna; preserve local flora and fauna<br>同义替换：plant and animal life, wildlife and vegetation",
+      "sentence": "For millennia, hunter-gatherers subsisted on a diverse and fluctuating diet, adapting their daily routines to the seasonal rhythms of wild <b>flora and fauna</b>."
+    },
+    {
+      "id": 9,
+      "match": "staple",
+      "type": "ielts",
+      "word": "staple / adj. & n.",
+      "phonetic": "/ˈsteɪpl/",
+      "meaning": "熟义：订书钉。<br><b>本篇语境生义：主要的，基本的；主食（staple crop 主粮作物）</b>",
+      "collocations": "staple crop / diet / food; a staple of modern life<br>同义替换：primary, principal, fundamental, mainstay",
+      "sentence": "Because they rarely depended on a single <b>staple</b> crop, famine was relatively uncommon, and infectious diseases seldom decimated their sparse, nomadic bands."
+    },
+    {
+      "id": 10,
+      "match": "famine",
+      "type": "cet6",
+      "word": "famine / n.",
+      "phonetic": "/ˈfæmɪn/",
+      "meaning": "饥荒，严重缺粮",
+      "collocations": "widespread famine; famine relief; suffer from famine<br>同义替换：starvation, severe food shortage, dearth",
+      "sentence": "Because they rarely depended on a single staple crop, <b>famine</b> was relatively uncommon, and infectious diseases seldom decimated their sparse, nomadic bands."
+    },
+    {
+      "id": 11,
+      "match": "infectious",
+      "type": "cet6",
+      "word": "infectious / adj.",
+      "phonetic": "/ɪnˈfekʃəs/",
+      "meaning": "传染性的，易传染的；（情绪等）有感染力的",
+      "collocations": "infectious diseases; highly infectious; infectious enthusiasm<br>同义替换：contagious, communicable, transmissible",
+      "sentence": "Because they rarely depended on a single staple crop, famine was relatively uncommon, and <b>infectious</b> diseases seldom decimated their sparse, nomadic bands."
+    },
+    {
+      "id": 12,
+      "match": "decimated",
+      "type": "ielts",
+      "word": "decimate / v.",
+      "phonetic": "/ˈdesɪmeɪt/",
+      "meaning": "大批杀害，严重破坏，大大削弱（原指古罗马“十抽一处死”）",
+      "collocations": "decimate a population / industry / ecosystem<br>同义替换：devastate, wipe out, ravage, drastically reduce",
+      "sentence": "Because they rarely depended on a single staple crop, famine was relatively uncommon, and infectious diseases seldom <b>decimated</b> their sparse, nomadic bands."
+    },
+    {
+      "id": 13,
+      "match": "sparse",
+      "type": "cet6",
+      "word": "sparse / adj.",
+      "phonetic": "/spɑːs/",
+      "meaning": "稀疏的，稀少的，分散的（反义词：dense）",
+      "collocations": "sparse population / vegetation; sparsely populated<br>同义替换：scattered, scarce, thin, scanty",
+      "sentence": "Because they rarely depended on a single staple crop, famine was relatively uncommon, and infectious diseases seldom decimated their <b>sparse</b>, nomadic bands."
+    },
+    {
+      "id": 14,
+      "match": "nomadic",
+      "type": "ielts",
+      "word": "nomadic / adj.",
+      "phonetic": "/nəʊˈmædɪk/",
+      "meaning": "游牧的，居无定所的，迁徙的（反义词：sedentary）",
+      "collocations": "nomadic tribes / lifestyle / bands; digital nomad<br>同义替换：wandering, itinerant, migratory, roaming",
+      "sentence": "Because they rarely depended on a single staple crop, famine was relatively uncommon, and infectious diseases seldom decimated their sparse, <b>nomadic</b> bands."
+    },
+    {
+      "id": 15,
+      "match": "unprecedented",
+      "type": "cet6",
+      "word": "unprecedented / adj.",
+      "phonetic": "/ʌnˈpresɪdentɪd/",
+      "meaning": "史无前例的，前所未有的（六级/雅思写作高频提分词）",
+      "collocations": "at an unprecedented pace / scale; unprecedented level of<br>同义替换：unparalleled, unheard-of, extraordinary",
+      "sentence": "Yet around ten thousand years ago, <i>Homo sapiens</i> began dedicating <b>unprecedented</b> time and physical labor to cultivating a handful of domesticated species—most notably wheat, rice, and maize."
+    },
+    {
+      "id": 16,
+      "match": "cultivating",
+      "type": "cet6",
+      "word": "cultivate / v.",
+      "phonetic": "/ˈkʌltɪveɪt/",
+      "meaning": "耕作，种植，培育；引申义：培养（品质、关系、习惯）",
+      "collocations": "cultivate crops / land; cultivate a habit / relationship<br>同义替换：grow, farm, nurture, foster",
+      "sentence": "Yet around ten thousand years ago, <i>Homo sapiens</i> began dedicating unprecedented time and physical labor to <b>cultivating</b> a handful of domesticated species—most notably wheat, rice, and maize."
+    },
+    {
+      "id": 17,
+      "match": "domesticated",
+      "type": "ielts",
+      "word": "domesticate / v. (adj. domesticated)",
+      "phonetic": "/dəˈmestɪkeɪt/",
+      "meaning": "驯化（动物），人工培育（植物）",
+      "collocations": "domesticated species / livestock / crops; domestication of plants<br>同义替换：tamed, cultivated, bred, adapted for human use",
+      "sentence": "Yet around ten thousand years ago, <i>Homo sapiens</i> began dedicating unprecedented time and physical labor to cultivating a handful of <b>domesticated</b> species—most notably wheat, rice, and maize."
+    },
+    {
+      "id": 18,
+      "match": "emancipating",
+      "type": "ielts",
+      "word": "emancipate / v.",
+      "phonetic": "/ɪˈmænsɪpeɪt/",
+      "meaning": "解放，使摆脱（政治、法律或繁重劳动的）束缚",
+      "collocations": "emancipate sb. from toil / poverty; social emancipation<br>同义替换：liberate, free, release, unshackle",
+      "sentence": "Rather than <b>emancipating</b> humans from harsh toil, the Agricultural Revolution bound them to the soil."
+    },
+    {
+      "id": 19,
+      "match": "toil",
+      "type": "ielts",
+      "word": "toil / n. & v.",
+      "phonetic": "/tɔɪl/",
+      "meaning": "苦工，繁重的体力劳动；辛苦劳作",
+      "collocations": "harsh / relentless toil; toil away at sth.<br>同义替换：drudgery, hard labor, exertion, grind",
+      "sentence": "Rather than emancipating humans from harsh <b>toil</b>, the Agricultural Revolution bound them to the soil."
+    },
+    {
+      "id": 20,
+      "match": "relentless",
+      "type": "ielts",
+      "word": "relentless / adj.",
+      "phonetic": "/rɪˈlentləs/",
+      "meaning": "持续不断的，不懈的，残酷无情的",
+      "collocations": "relentless pursuit / pressure / weeding<br>同义替换：unrelenting, ceaseless, persistent, unremitting",
+      "sentence": "Wheat demanded <b>relentless</b> weeding, irrigation, and pest control—tasks for which the human spine and knees had never evolved."
+    },
+    {
+      "id": 21,
+      "match": "irrigation",
+      "type": "cet6",
+      "word": "irrigation / n.",
+      "phonetic": "/ˌɪrɪˈɡeɪʃn/",
+      "meaning": "灌溉，水利（雅思阅读农业/地理类常考词）",
+      "collocations": "irrigation system / canal / network; drip irrigation<br>同义替换：watering, agricultural water supply",
+      "sentence": "Wheat demanded relentless weeding, <b>irrigation</b>, and pest control—tasks for which the human spine and knees had never evolved."
+    },
+    {
+      "id": 22,
+      "match": "Paradoxically",
+      "type": "ielts",
+      "word": "paradoxically / adv.",
+      "phonetic": "/ˌpærəˈdɒksɪkli/",
+      "meaning": "矛盾地，似非而是地，讽刺的是（雅思大作文转折逻辑高分词）",
+      "collocations": "paradoxically enough; a striking paradox<br>同义替换：ironically, contradictorily, counterintuitively",
+      "sentence": "<b>Paradoxically</b>, while the aggregate supply of calories surged, individual nutrition deteriorated, as monotonous cereal-based diets deprived early farmers of essential vitamins and minerals."
+    },
+    {
+      "id": 23,
+      "match": "aggregate",
+      "type": "ielts",
+      "word": "aggregate / adj. & n.",
+      "phonetic": "/ˈæɡrɪɡət/",
+      "meaning": "总计的，合计的，总体的；总数（常与 individual 形成对比）",
+      "collocations": "aggregate supply / demand / output; in the aggregate<br>同义替换：total, combined, cumulative, overall",
+      "sentence": "Paradoxically, while the <b>aggregate</b> supply of calories surged, individual nutrition deteriorated, as monotonous cereal-based diets deprived early farmers of essential vitamins and minerals."
+    },
+    {
+      "id": 24,
+      "match": "surged",
+      "type": "cet6",
+      "word": "surge / v. & n.",
+      "phonetic": "/sɜːdʒ/",
+      "meaning": "激增，猛涨，急剧上升（雅思小作文高频动词）",
+      "collocations": "surge dramatically; a surge in population / demand<br>同义替换：soar, skyrocket, escalate, spike",
+      "sentence": "Paradoxically, while the aggregate supply of calories <b>surged</b>, individual nutrition deteriorated, as monotonous cereal-based diets deprived early farmers of essential vitamins and minerals."
+    },
+    {
+      "id": 25,
+      "match": "deteriorated",
+      "type": "cet6",
+      "word": "deteriorate / v.",
+      "phonetic": "/dɪˈtɪəriəreɪt/",
+      "meaning": "恶化，变坏，退化（不及物动词，切勿误用被动语态）",
+      "collocations": "deteriorate rapidly; environmental / health deterioration<br>同义替换：worsen, decline, degrade, degenerate",
+      "sentence": "Paradoxically, while the aggregate supply of calories surged, individual nutrition <b>deteriorated</b>, as monotonous cereal-based diets deprived early farmers of essential vitamins and minerals."
+    },
+    {
+      "id": 26,
+      "match": "monotonous",
+      "type": "cet6",
+      "word": "monotonous / adj.",
+      "phonetic": "/məˈnɒtənəs/",
+      "meaning": "单调乏味的，千篇一律的，缺乏变化的",
+      "collocations": "monotonous diet / routine / work<br>同义替换：repetitive, tedious, uniform, unvaried",
+      "sentence": "Paradoxically, while the aggregate supply of calories surged, individual nutrition deteriorated, as <b>monotonous</b> cereal-based diets deprived early farmers of essential vitamins and minerals."
+    },
+    {
+      "id": 27,
+      "match": "deprived",
+      "type": "cet6",
+      "word": "deprive / v.",
+      "phonetic": "/dɪˈpraɪv/",
+      "meaning": "剥夺，使丧失，使不能享有（固定搭配：deprive sb. of sth.）",
+      "collocations": "deprive sb. of sleep / nutrients / rights; sleep-deprived<br>同义替换：strip of, rob of, deny, divest of",
+      "sentence": "Paradoxically, while the aggregate supply of calories surged, individual nutrition deteriorated, as monotonous cereal-based diets <b>deprived</b> early farmers of essential vitamins and minerals."
+    },
+    {
+      "id": 28,
+      "match": "sedentary",
+      "type": "ielts",
+      "word": "sedentary / adj.",
+      "phonetic": "/ˈsedntri/",
+      "meaning": "定居的（人类学）；久坐不动的（雅思健康类超高频词）",
+      "collocations": "sedentary settlements / lifestyle / job<br>同义替换：settled, stationary, inactive, desk-bound",
+      "sentence": "Moreover, dense <b>sedentary</b> settlements became breeding grounds for pathogens that readily jumped from domesticated livestock to human hosts, triggering devastating epidemics unknown to their wandering ancestors."
+    },
+    {
+      "id": 29,
+      "match": "pathogens",
+      "type": "ielts",
+      "word": "pathogen / n.",
+      "phonetic": "/ˈpæθədʒən/",
+      "meaning": "病原体，致病微生物（词根 path- 疾病 + -gen 产生）",
+      "collocations": "airborne / foodborne pathogens; transmit pathogens<br>同义替换：disease-causing agent, germ, microbe, virus/bacterium",
+      "sentence": "Moreover, dense sedentary settlements became breeding grounds for <b>pathogens</b> that readily jumped from domesticated livestock to human hosts, triggering devastating epidemics unknown to their wandering ancestors."
+    },
+    {
+      "id": 30,
+      "match": "epidemics",
+      "type": "cet6",
+      "word": "epidemic / n. & adj.",
+      "phonetic": "/ˌepɪˈdemɪk/",
+      "meaning": "流行病，传染病爆发；（坏事的）盛行，泛滥",
+      "collocations": "devastating epidemics; an obesity epidemic; outbreak of an epidemic<br>同义替换：outbreak, plague, contagion, widespread surge",
+      "sentence": "Moreover, dense sedentary settlements became breeding grounds for pathogens that readily jumped from domesticated livestock to human hosts, triggering devastating <b>epidemics</b> unknown to their wandering ancestors."
+    },
+    {
+      "id": 31,
+      "match": "compromised",
+      "type": "ielts",
+      "word": "compromise / v.",
+      "phonetic": "/ˈkɒmprəmaɪz/",
+      "meaning": "熟义：妥协，折中。<br><b>本篇语境生义：损害，危及，削弱（及物动词，雅思阅读/写作高频考点）</b>",
+      "collocations": "compromise health / safety / integrity / privacy<br>同义替换：undermine, jeopardize, impair, weaken",
+      "sentence": "Why, then, did societies persist in an arrangement that <b>compromised</b> individual health and longevity?"
+    },
+    {
+      "id": 32,
+      "match": "longevity",
+      "type": "ielts",
+      "word": "longevity / n.",
+      "phonetic": "/lɒnˈdʒevəti/",
+      "meaning": "长寿，寿命；持久性（词根 long- 长 + -ev- 生命/时代）",
+      "collocations": "human longevity; promote / increase longevity<br>同义替换：lifespan, life expectancy, durability",
+      "sentence": "Why, then, did societies persist in an arrangement that compromised individual health and <b>longevity</b>?"
+    },
+    {
+      "id": 33,
+      "match": "outpaced",
+      "type": "ielts",
+      "word": "outpace / v.",
+      "phonetic": "/ˌaʊtˈpeɪs/",
+      "meaning": "超过，赶超，速度或重要性胜过",
+      "collocations": "outpace supply / growth / rivals; demand outpaces supply<br>同义替换：outstrip, surpass, overtake, exceed",
+      "sentence": "The answer lies in an evolutionary trap: collective survival <b>outpaced</b> personal well-being."
+    },
+    {
+      "id": 34,
+      "match": "exponentially",
+      "type": "ielts",
+      "word": "exponentially / adv.",
+      "phonetic": "/ˌekspəˈnenʃəli/",
+      "meaning": "呈指数级地，成倍地，极其迅速地",
+      "collocations": "grow / increase / expand exponentially; exponential growth<br>同义替换：rapidly, dramatically, by leaps and bounds",
+      "sentence": "A village sustained by grain could support <b>exponentially</b> more offspring per square kilometer than a foraging territory, even if those children grew up stunted and malnourished."
+    },
+    {
+      "id": 35,
+      "match": "stunted",
+      "type": "ielts",
+      "word": "stunted / adj. (v. stunt)",
+      "phonetic": "/ˈstʌntɪd/",
+      "meaning": "熟义：特技表演，噱头（n.）。<br><b>本篇语境生义：发育不良的，矮小的，受阻碍的</b>",
+      "collocations": "stunted growth / development; stunt economic growth<br>同义替换：underdeveloped, hindered, impaired, dwarfed",
+      "sentence": "A village sustained by grain could support exponentially more offspring per square kilometer than a foraging territory, even if those children grew up <b>stunted</b> and malnourished."
+    },
+    {
+      "id": 36,
+      "match": "malnourished",
+      "type": "ielts",
+      "word": "malnourished / adj.",
+      "phonetic": "/ˌmælˈnʌrɪʃt/",
+      "meaning": "营养不良的（前缀 mal- 坏/不足 + nourish 滋养）",
+      "collocations": "severely malnourished children; suffer from malnutrition<br>同义替换：undernourished, underfed, poorly nourished",
+      "sentence": "A village sustained by grain could support exponentially more offspring per square kilometer than a foraging territory, even if those children grew up stunted and <b>malnourished</b>."
+    },
+    {
+      "id": 37,
+      "match": "swelled",
+      "type": "cet6",
+      "word": "swell / v.",
+      "phonetic": "/swel/",
+      "meaning": "膨胀，肿胀；<b>本篇语境：（人口、数量等）激增，迅速扩大</b>",
+      "collocations": "populations swell; swell the ranks of; swell beyond capacity<br>同义替换：expand, balloon, surge, mushroom",
+      "sentence": "Once populations <b>swelled</b> beyond the carrying capacity of wild ecosystems, reverting to hunting and gathering became virtually impossible; abandonment of the fields meant immediate starvation."
+    },
+    {
+      "id": 38,
+      "match": "reverting",
+      "type": "ielts",
+      "word": "revert / v.",
+      "phonetic": "/rɪˈvɜːt/",
+      "meaning": "恢复到（旧习惯/状态），重返，倒退回（常与 to 连用）",
+      "collocations": "revert to a former state / old habits; reversion<br>同义替换：return to, fall back on, regress to",
+      "sentence": "Once populations swelled beyond the carrying capacity of wild ecosystems, <b>reverting</b> to hunting and gathering became virtually impossible; abandonment of the fields meant immediate starvation."
+    },
+    {
+      "id": 39,
+      "match": "incremental",
+      "type": "ielts",
+      "word": "incremental / adj.",
+      "phonetic": "/ˌɪŋkrəˈmentl/",
+      "meaning": "渐进的，递增的，逐步积累的（本篇指一代代微小变化叠加）",
+      "collocations": "incremental change / progress / improvement<br>同义替换：gradual, step-by-step, progressive, cumulative",
+      "sentence": "Thus, <b>incremental</b> generations walked unknowingly into a gilded cage, trading leisure and biological resilience for demographic expansion and the eventual rise of complex civilizations."
+    },
+    {
+      "id": 40,
+      "match": "gilded cage",
+      "type": "ielts",
+      "word": "gilded cage / phr.",
+      "phonetic": "/ˌɡɪldɪd ˈkeɪdʒ/",
+      "meaning": "镀金的牢笼（比喻表面富足或光鲜，实则束缚自由与健康的生活处境）",
+      "collocations": "trapped in a gilded cage; walk into a gilded cage<br>同义替换：luxurious prison, comfortable trap, golden handcuffs",
+      "sentence": "Thus, incremental generations walked unknowingly into a <b>gilded cage</b>, trading leisure and biological resilience for demographic expansion and the eventual rise of complex civilizations."
+    },
+    {
+      "id": 41,
+      "match": "resilience",
+      "type": "ielts",
+      "word": "resilience / n.",
+      "phonetic": "/rɪˈzɪliəns/",
+      "meaning": "韧性，复原力，抗压/抵抗能力（雅思心理/生态/社会类高频词）",
+      "collocations": "biological / psychological / economic resilience; build resilience<br>同义替换：adaptability, robustness, durability, toughness",
+      "sentence": "Thus, incremental generations walked unknowingly into a gilded cage, trading leisure and biological <b>resilience</b> for demographic expansion and the eventual rise of complex civilizations."
+    },
+    {
+      "id": 42,
+      "match": "demographic",
+      "type": "ielts",
+      "word": "demographic / adj. & n.",
+      "phonetic": "/ˌdeməˈɡræfɪk/",
+      "meaning": "人口的，人口统计学的（词根 demo- 人民 + -graph- 写/记录）",
+      "collocations": "demographic expansion / shift / dividend / aging<br>同义替换：population-related, populational",
+      "sentence": "Thus, incremental generations walked unknowingly into a gilded cage, trading leisure and biological resilience for <b>demographic</b> expansion and the eventual rise of complex civilizations."
+    }
+  ]
+}

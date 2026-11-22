@@ -1,0 +1,36 @@
+[
+  {
+    "id": "agricultural-revolution-day1",
+    "title": "The Agricultural Revolution",
+    "genre": "学术社科",
+    "day": 1,
+    "date": "2026-11-22",
+    "summary": "从采集狩猎到农耕文明的演化陷阱：探讨热量激增、营养退化、瘟疫滋生与人口膨胀的深层权衡。",
+    "wordCount": 277,
+    "vocabCount": 42,
+    "sentenceCount": 4,
+    "tags": [
+      "CET-6",
+      "IELTS 7.5+"
+    ],
+    "keywords": [
+      "foraging",
+      "hailed",
+      "in hindsight",
+      "ambivalent",
+      "bargain",
+      "subsisted",
+      "fluctuating",
+      "flora and fauna",
+      "staple",
+      "famine",
+      "infectious",
+      "decimated",
+      "sparse",
+      "nomadic",
+      "unprecedented"
+    ],
+    "pdfPath": "assets/pdfs/The_Agricultural_Revolution_Day1_2026-11-22.pdf",
+    "dataPath": "data/entries/agricultural-revolution-day1.json"
+  }
+]
