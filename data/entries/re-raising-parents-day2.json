@@ -1,0 +1,475 @@
+{
+  "id": "re-raising-parents-day2",
+  "title": "Re-raising Parents: China's New Filial Piety",
+  "genre": "外刊",
+  "sourceLabel": "📰 China Daily 外刊精读",
+  "day": 2,
+  "date": "2026-11-23",
+  "wordCount": 767,
+  "paragraphs": [
+    "In a reversal of traditional family roles, a growing number of young Chinese people are taking on the task of \"re-raising\" their parents — teaching them digital skills, purchasing their health supplements, planning holidays and even escorting them to concerts — all in a bid to help them navigate a fast-changing world.",
+    "The trend, which has gained traction on social media under the hashtag \"I re-raised my parents after growing up\", has drawn widespread attention for redefining filial piety from passive duty to active, creative care.",
+    "At the heart of the trend is a widening digital divide. While older generations grew up in a relatively stable world, their children came of age in an era of smartphones, livestreaming and algorithm-driven recommendations. As a result, young people often have a clear advantage in accessing information and navigating online services — skills that many parents have yet to master.",
+    "For many, re-raising begins with small but meaningful acts.",
+    "Hang Yunjie, an 18-year-old freshman in Beijing, discovered the gap when he decided to buy fish oil for his father and reading glasses for his mother. His parents had long relied on television advertisements or pharmacy recommendations when purchasing health supplements. Hang instead consulted online review forums and comparison blogs before making his purchases.",
+    "\"My father admitted that my choice was better than his usual brand, but he still expects me to handle everything next time,\" Hang said. \"He doesn't want to learn how to find the information himself.\"",
+    "\"I managed to convince him that his old brand was inferior, but I failed to spark his curiosity about the digital world,\" he said.",
+    "For Xu Yu, a 31-year-old office worker in Beijing, the most meaningful change came after buying his parents new smartphones and teaching them how to use food delivery apps. He patiently guided them through registration, logging in, setting delivery addresses, choosing payment methods and adding notes for special requests.",
+    "\"They used to come home exhausted from work and still had to cook. Now they can order whatever they want,\" he said. \"When I was a child, they worried about my meals. Now I want to make their lives easier.\"",
+    "Some young people are also helping their parents enjoy experiences they might never have pursued on their own.",
+    "Zhang Anning, a 22-year-old postgraduate student in Beijing, began her re-raising journey after realizing that her parents would never take the initiative to travel. She started planning holidays for them, from renting a car in Guizhou province so her father could drive to see blooming azaleas to booking sea-view rooms in Hainan province.",
+    "\"I want them to experience the joy of traveling, just as they made sure I enjoyed my childhood,\" she said. Zhang also serves as the family's photographer, using film cameras to document their trips. \"When I was little, they recorded my growth. Now it's my turn to record their travels and preserve these treasured memories.\"",
+    "Yu Tianxin, a 19-year-old freshman in Beijing, took an even more hands-on role by accompanying her mother to three concerts by a singer her mother had long admired, arranging everything from tickets to hotel reservations.",
+    "Her most memorable moment came when her mother went to the restroom without her phone, forgot their seat numbers and wandered around the arena calling out Yu's name. Yu eventually spotted her and, as she put it, \"reeled her back\" to her seat.",
+    "\"It was exhausting, but also deeply satisfying,\" Yu said. \"My mother was overjoyed. She had always wanted to see that singer perform, and spending that time together brought us much closer.\"",
+    "Yu distinguishes her actions from the traditional understanding of filial piety. \"Conventional filial piety is about repaying a debt — they raised me, so I accompany them in old age,\" she said. \"But going to concerts with my mother comes from genuine love because we have a close relationship.\"",
+    "Yao Huasong, a sociology professor at Guangzhou University, views the trend as a positive evolution in intergenerational relationships. In a published article, Yao said the phenomenon rests on three conditions: young people's stronger digital and information literacy, their willingness to invest time and patience in communicating with their parents, and parents' growing readiness to set aside traditional authority and engage in more equal dialogue.",
+    "Generational differences are inevitable, he wrote, but what matters most is how both sides respond to them. He cited examples such as making regular video calls, ordering groceries online, arranging health check-ups and taking family trips as meaningful expressions of \"home-making\".",
+    "\"This represents a new interpretation of the traditional idea of raising children for support in old age,\" Yao wrote. \"It deserves recognition and encouragement.\""
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "original": "In a reversal of traditional family roles, a growing number of young Chinese people are taking on the task of \"re-raising\" their parents — teaching them digital skills, purchasing their health supplements, planning holidays and even escorting them to concerts — all in a bid to help them navigate a fast-changing world.",
+      "zhTranslation": "在传统家庭角色的逆转中，越来越多的中国年轻人承担起了“重新养育”父母的任务——教他们数字技能、为他们选购保健品、规划假期甚至陪他们看演唱会——这一切都是为了帮助父母适应这个瞬息万变的世界。",
+      "backbone": "<b>a growing number of young Chinese people</b> (主语) <b>are taking on</b> (谓语) <b>the task of \"re-raising\" their parents</b> (宾语).",
+      "grammar": "1. <b>介词短语作背景状语前置</b>：<code>In a reversal of traditional family roles</code> 开篇点出“角色逆转”的核心反差。<br>2. <b>双破折号插入语（平行现在分词列举）</b>：<code>teaching..., purchasing..., planning... and even escorting...</code> 四个并列动名词/分词短语具象化解释 <code>re-raising</code>，节奏明快。<br>3. <b>高频目的短语收尾</b>：<code>all in a bid to help them navigate...</code> 替代平庸的 <code>in order to</code>，是外刊与雅思 7.5+ 写作的标志性表达。",
+      "template": "<b>【雅思大作文社会趋势开篇模板】</b><br>In a reversal of traditional [旧格局], a growing number of [群体] are taking on the task of [新趋势] — [具体做法1], [具体做法2] and even [具体做法3] — all in a bid to help [对象] navigate a fast-changing world.<br><b>【备考仿写示例（远程办公与教育话题）】</b><br>In a reversal of traditional workplace norms, a growing number of young professionals are embracing remote work — setting flexible schedules, relocating to smaller cities and even building cross-border teams — all in a bid to navigate an increasingly digitized economy."
+    },
+    {
+      "id": 2,
+      "original": "The trend, which has gained traction on social media under the hashtag \"I re-raised my parents after growing up\", has drawn widespread attention for redefining filial piety from passive duty to active, creative care.",
+      "zhTranslation": "这一在社交媒体上以“长大后我把父母重新养了一遍”为话题走红的趋势，因将孝道从被动义务重新定义为主动且富有创意的关爱，引发了广泛关注。",
+      "backbone": "<b>The trend</b> (主语) <b>has drawn</b> (谓语) <b>widespread attention</b> (宾语).",
+      "grammar": "1. <b>非限制性定语从句作插入语</b>：<code>which has gained traction on social media under the hashtag...</code> 精准交代社会趋势的传播载体与热度。<br>2. <b>for + 动名词作原因状语</b>：<code>for redefining filial piety from A to B</code> 用 <code>from passive duty to active, creative care</code> 构成极具张力的对比结构，非常适合议论文立意升华。",
+      "template": "<b>【六级/雅思现象评述与重新定义模板】</b><br>The trend, which has gained traction on social media, has drawn widespread attention for redefining [传统概念] from [旧内涵] to [新内涵].<br><b>【备考仿写示例（消费观与环保话题）】</b><br>The minimalist movement, which has gained traction on social media, has drawn widespread attention for redefining personal success from material abundance to intentional, sustainable living."
+    },
+    {
+      "id": 3,
+      "original": "At the heart of the trend is a widening digital divide. While older generations grew up in a relatively stable world, their children came of age in an era of smartphones, livestreaming and algorithm-driven recommendations.",
+      "zhTranslation": "这一趋势的核心是不断扩大的数字鸿沟。老一辈人在相对稳定的世界中成长，而他们的子女则在智能手机、直播和算法推荐的时代步入成年。",
+      "backbone": "<b>a widening digital divide</b> (主语) <b>is</b> (系动词) <b>at the heart of the trend</b> (表语，倒装前置).",
+      "grammar": "1. <b>表语前置完全倒装</b>：<code>At the heart of the trend is...</code> 将核心原因置于句末焦点位置，自然衔接下文展开论述，比 <code>The main reason is...</code> 高级得多。<br>2. <b>While 引导鲜明对比从句</b>：<code>older generations grew up in...</code> 与 <code>their children came of age in...</code> 构成词义与结构双重对仗，避免重复使用 <code>grow up</code>。",
+      "template": "<b>【雅思大作文成因剖析高分倒装模板】</b><br>At the heart of [社会现象] is a widening [核心鸿沟/矛盾]. While [群体A] grew up in [环境A], [群体B] came of age in an era of [时代特征B].<br><b>【备考仿写示例（代际沟通/媒体素养话题）】</b><br>At the heart of modern generational conflict is a widening information gap. While older citizens grew up in an era of print newspapers, younger cohorts came of age in a world of short-form videos and algorithm-driven feeds."
+    },
+    {
+      "id": 4,
+      "original": "In a published article, Yao said the phenomenon rests on three conditions: young people's stronger digital and information literacy, their willingness to invest time and patience in communicating with their parents, and parents' growing readiness to set aside traditional authority and engage in more equal dialogue.",
+      "zhTranslation": "姚华松在一篇公开发表的文章中指出，这一现象依托于三个条件：年轻人更强的数字与信息素养、他们愿意投入时间与耐心与父母沟通，以及父母日益愿意放下传统权威、展开更加平等的对话。",
+      "backbone": "<b>Yao</b> (主语) <b>said</b> (谓语) <b>the phenomenon rests on three conditions</b> (宾语从句).",
+      "grammar": "1. <b>核心动词短语</b>：<code>rest on</code>（依托于，取决于，相当于 <code>depend on / be based on</code>），学术感极强。<br>2. <b>冒号引出三段平行名词化结构（Nominalization）</b>：<code>literacy</code>（素养）、<code>willingness to...</code>（意愿）、<code>readiness to...</code>（准备/愿意），三者用 <code>A, B, and C</code> 高度凝练地概括复杂社会成因，是雅思写作 8 分标配写法。",
+      "template": "<b>【雅思大作文三要素总起论证模板】</b><br>[现象/成功] rests on three conditions: [主体A的素养/能力], their willingness to invest [资源] in [行动], and [主体B的] growing readiness to set aside [旧观念] and engage in [新互动].<br><b>【备考仿写示例（跨文化合作/教育改革话题）】</b><br>Effective educational reform rests on three conditions: teachers' stronger digital literacy, schools' willingness to invest resources in practical training, and parents' growing readiness to set aside exam-only mindsets and engage in holistic dialogue."
+    }
+  ],
+  "vocab": [
+    {
+      "id": 1,
+      "match": "reversal",
+      "type": "cet6",
+      "word": "reversal / n.",
+      "phonetic": "/rɪˈvɜːsl/",
+      "meaning": "逆转，颠倒，反转（动词 reverse）",
+      "collocations": "a reversal of roles / fortune; suffer a sharp reversal<br>同义替换：inversion, turnaround, shift",
+      "sentence": "In a <b>reversal</b> of traditional family roles, a growing number of young Chinese people are taking on the task of \"re-raising\" their parents.",
+      "writingTip": "社会变迁开头高分短语：In a remarkable reversal of conventional gender roles, more fathers are taking paternity leave.",
+      "relatedWords": [
+        {
+          "word": "conventional",
+          "relation": "对比",
+          "targetId": 24
+        },
+        {
+          "word": "intergenerational",
+          "relation": "关联",
+          "targetId": 27
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "match": "in a bid to",
+      "type": "ielts",
+      "word": "in a bid to / phr.",
+      "phonetic": "/ɪn ə bɪd tuː/",
+      "meaning": "为了，企图，努力争取（外刊最高频目的状语，替换 in order to）",
+      "collocations": "in a bid to boost / curb / bridge; make a bid for<br>同义替换：in an effort to, in an attempt to, with the aim of",
+      "sentence": "…all <b>in a bid to</b> help them navigate a fast-changing world.",
+      "writingTip": "雅思大作文高分替换 in order to：Municipal governments are subsidizing public transit in a bid to curb carbon emissions."
+    },
+    {
+      "id": 3,
+      "match": "navigate",
+      "type": "ielts",
+      "word": "navigate / v.",
+      "phonetic": "/ˈnævɪɡeɪt/",
+      "meaning": "熟义：导航，航行。<br><b>本篇语境生义：应对，驾驭，摸索适应（复杂环境或数字系统）</b>",
+      "collocations": "navigate a fast-changing world; navigate online services / bureaucracy<br>同义替换：cope with, steer through, maneuver through",
+      "sentence": "…all in a bid to help them <b>navigate</b> a fast-changing world.",
+      "writingTip": "职场/社会适应高频动词：Graduates need critical thinking to navigate an uncertain labor market.",
+      "relatedWords": [
+        {
+          "word": "digital divide",
+          "relation": "语境",
+          "targetId": 6
+        },
+        {
+          "word": "literacy",
+          "relation": "能力",
+          "targetId": 28
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "match": "gained traction",
+      "type": "ielts",
+      "word": "gain traction / phr.",
+      "phonetic": "/ɡeɪn ˈtrækʃn/",
+      "meaning": "走红，获得广泛关注/势头，站稳脚跟（外刊趋势报道必考短语）",
+      "collocations": "gain traction on social media; lose traction<br>同义替换：catch on, gather momentum, take off",
+      "sentence": "The trend, which has <b>gained traction</b> on social media under the hashtag \"I re-raised my parents after growing up\"…",
+      "writingTip": "描述新趋势兴起（替换 become popular）：Plant-based diets have steadily gained traction among health-conscious urbanites."
+    },
+    {
+      "id": 5,
+      "match": "filial piety",
+      "type": "ielts",
+      "word": "filial piety / n. phr.",
+      "phonetic": "/ˌfɪliəl ˈpaɪəti/",
+      "meaning": "孝道，孝顺（六级翻译与中国社会话题雅思作文核心词组）",
+      "collocations": "redefine filial piety; practice / uphold filial piety<br>同义替换：devotion to parents, family duty",
+      "sentence": "…has drawn widespread attention for redefining <b>filial piety</b> from passive duty to active, creative care.",
+      "writingTip": "家庭与养老话题高分句：Modern interpretations of filial piety prioritize emotional companionship over mere financial support.",
+      "relatedWords": [
+        {
+          "word": "conventional",
+          "relation": "传统观",
+          "targetId": 24
+        },
+        {
+          "word": "repaying",
+          "relation": "义务观",
+          "targetId": 25
+        },
+        {
+          "word": "genuine",
+          "relation": "情感观",
+          "targetId": 26
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "match": "digital divide",
+      "type": "ielts",
+      "word": "digital divide / n. phr.",
+      "phonetic": "/ˌdɪdʒɪtl dɪˈvaɪd/",
+      "meaning": "数字鸿沟（不同群体在获取和运用数字技术上的差距）",
+      "collocations": "a widening digital divide; bridge / narrow the digital divide<br>同义替换：technological gap, information inequality",
+      "sentence": "At the heart of the trend is a widening <b>digital divide</b>.",
+      "writingTip": "科技与老龄化万能句：Public libraries can play a pivotal role in bridging the widening digital divide for senior citizens.",
+      "relatedWords": [
+        {
+          "word": "algorithm-driven",
+          "relation": "特征",
+          "targetId": 8
+        },
+        {
+          "word": "literacy",
+          "relation": "对策",
+          "targetId": 28
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "match": "came of age",
+      "type": "ielts",
+      "word": "come of age / phr.",
+      "phonetic": "/kʌm əv eɪdʒ/",
+      "meaning": "步入成年，在……时代成长起来；成熟（替换 grow up）",
+      "collocations": "come of age in the digital era; a coming-of-age story<br>同义替换：reach adulthood, mature, grow up",
+      "sentence": "While older generations grew up in a relatively stable world, their children <b>came of age</b> in an era of smartphones…"
+    },
+    {
+      "id": 8,
+      "match": "algorithm-driven",
+      "type": "ielts",
+      "word": "algorithm-driven / adj.",
+      "phonetic": "/ˈælɡərɪðəm ˌdrɪvn/",
+      "meaning": "算法驱动的（雅思科技/媒体话题高频复合形容词）",
+      "collocations": "algorithm-driven recommendations / feeds / pricing<br>同义替换：data-driven, AI-powered, automated",
+      "sentence": "…their children came of age in an era of smartphones, livestreaming and <b>algorithm-driven</b> recommendations."
+    },
+    {
+      "id": 9,
+      "match": "supplements",
+      "type": "cet6",
+      "word": "supplement / n. & v.",
+      "phonetic": "/ˈsʌplɪmənt/",
+      "meaning": "n. 营养补充剂，保健品；增刊；v. 补充，增补",
+      "collocations": "health / dietary supplements; supplement one's income<br>同义替换：nutritional aid, complement, addition",
+      "sentence": "His parents had long relied on television advertisements or pharmacy recommendations when purchasing health <b>supplements</b>."
+    },
+    {
+      "id": 10,
+      "match": "inferior",
+      "type": "cet6",
+      "word": "inferior / adj.",
+      "phonetic": "/ɪnˈfɪəriə(r)/",
+      "meaning": "较差的，次等的，不如……的（固定搭配 be inferior to，反义 superior）",
+      "collocations": "be inferior to; inferior quality; inferiority complex<br>同义替换：substandard, second-rate, poorer",
+      "sentence": "\"I managed to convince him that his old brand was <b>inferior</b>, but I failed to spark his curiosity about the digital world,\" he said."
+    },
+    {
+      "id": 11,
+      "match": "spark",
+      "type": "ielts",
+      "word": "spark / v. & n.",
+      "phonetic": "/spɑːk/",
+      "meaning": "熟义：n. 火花，火星。<br><b>本篇语境生义：v. 激发，引发，触发（好奇心、辩论、变革等）</b>",
+      "collocations": "spark curiosity / debate / outrage / interest<br>同义替换：ignite, trigger, stimulate, kindle",
+      "sentence": "\"I managed to convince him that his old brand was inferior, but I failed to <b>spark</b> his curiosity about the digital world,\" he said.",
+      "writingTip": "教育话题高频动词：Hands-on experiments are far more effective at sparking students' curiosity than rote memorization."
+    },
+    {
+      "id": 12,
+      "match": "exhausted",
+      "type": "cet6",
+      "word": "exhausted / adj.",
+      "phonetic": "/ɪɡˈzɔːstɪd/",
+      "meaning": "筋疲力尽的，疲惫不堪的（名词 exhaustion；耗尽 resources 用 exhaust）",
+      "collocations": "come home exhausted; mentally / physically exhausted<br>同义替换：worn out, drained, fatigued",
+      "sentence": "\"They used to come home <b>exhausted</b> from work and still had to cook. Now they can order whatever they want,\" he said."
+    },
+    {
+      "id": 13,
+      "match": "pursued",
+      "type": "cet6",
+      "word": "pursue / v.",
+      "phonetic": "/pəˈsjuː/",
+      "meaning": "追求，从事，继续执行（名词 pursuit）",
+      "collocations": "pursue a career / experience / goal; in pursuit of<br>同义替换：seek, chase, engage in, follow",
+      "sentence": "Some young people are also helping their parents enjoy experiences they might never have <b>pursued</b> on their own."
+    },
+    {
+      "id": 14,
+      "match": "take the initiative",
+      "type": "cet6",
+      "word": "take the initiative / phr.",
+      "phonetic": "/teɪk ði ɪˈnɪʃətɪv/",
+      "meaning": "采取主动，带头，率先行动（六级高频固定搭配）",
+      "collocations": "take the initiative to do sth.; show initiative; on one's own initiative<br>同义替换：take the lead, step forward, be proactive",
+      "sentence": "Zhang Anning… began her re-raising journey after realizing that her parents would never <b>take the initiative</b> to travel.",
+      "writingTip": "个人成长/公民责任句型：Citizens should take the initiative to adopt eco-friendly habits rather than waiting solely for regulation."
+    },
+    {
+      "id": 15,
+      "match": "blooming",
+      "type": "cet6",
+      "word": "blooming / adj. (v. bloom)",
+      "phonetic": "/ˈbluːmɪŋ/",
+      "meaning": "盛开的，绽放的；生机勃勃的（in full bloom 盛开）",
+      "collocations": "blooming flowers / azaleas; in full bloom<br>同义替换：blossoming, flourishing, thriving",
+      "sentence": "She started planning holidays for them, from renting a car in Guizhou province so her father could drive to see <b>blooming</b> azaleas…"
+    },
+    {
+      "id": 16,
+      "match": "document",
+      "type": "ielts",
+      "word": "document / v.",
+      "phonetic": "/ˈdɒkjument/",
+      "meaning": "熟义：n. 文件，文档。<br><b>本篇语境生义：v. 详细记录，用影像/文字记载（高频学术与外刊动词）</b>",
+      "collocations": "document trips / changes / history; well-documented<br>同义替换：chronicle, record, capture, log",
+      "sentence": "Zhang also serves as the family's photographer, using film cameras to <b>document</b> their trips.",
+      "writingTip": "雅思写作高分动词（替换 record）：Numerous longitudinal studies have documented the link between sleep deprivation and declining productivity.",
+      "relatedWords": [
+        {
+          "word": "preserve",
+          "relation": "并列",
+          "targetId": 17
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "match": "preserve",
+      "type": "cet6",
+      "word": "preserve / v.",
+      "phonetic": "/prɪˈzɜːv/",
+      "meaning": "珍藏，保存，保护（文化遗产、记忆、环境等）",
+      "collocations": "preserve treasured memories; preserve cultural heritage / biodiversity<br>同义替换：safeguard, conserve, cherish, maintain",
+      "sentence": "\"Now it's my turn to record their travels and <b>preserve</b> these treasured memories.\""
+    },
+    {
+      "id": 18,
+      "match": "hands-on",
+      "type": "ielts",
+      "word": "hands-on / adj.",
+      "phonetic": "/ˌhændz ˈɒn/",
+      "meaning": "亲力亲为的，亲自参与的；动手实践的（雅思教育/职场高频词）",
+      "collocations": "take a hands-on role / approach; hands-on experience<br>同义替换：practical, proactive, direct, involved",
+      "sentence": "Yu Tianxin, a 19-year-old freshman in Beijing, took an even more <b>hands-on</b> role by accompanying her mother to three concerts…",
+      "writingTip": "教育/实践类话题：Universities should complement theoretical lectures with hands-on internships."
+    },
+    {
+      "id": 19,
+      "match": "accompanying",
+      "type": "cet6",
+      "word": "accompany / v.",
+      "phonetic": "/əˈkʌmpəni/",
+      "meaning": "陪伴，陪同；伴随，与……同时发生",
+      "collocations": "accompany sb. to a concert; be accompanied by<br>同义替换：escort, go along with, attend",
+      "sentence": "Yu Tianxin… took an even more hands-on role by <b>accompanying</b> her mother to three concerts by a singer her mother had long admired…"
+    },
+    {
+      "id": 20,
+      "match": "wandered",
+      "type": "cet6",
+      "word": "wander / v.",
+      "phonetic": "/ˈwɒndə(r)/",
+      "meaning": "漫步，徘徊，迷路走动；（注意力）走神（注意区分 wonder 想知道）",
+      "collocations": "wander around the arena; one's mind wanders<br>同义替换：roam, stroll, drift, stray",
+      "sentence": "…her mother went to the restroom without her phone, forgot their seat numbers and <b>wandered</b> around the arena calling out Yu's name."
+    },
+    {
+      "id": 21,
+      "match": "reeled her back",
+      "type": "ielts",
+      "word": "reel sb. back / phr.",
+      "phonetic": "/riːl bæk/",
+      "meaning": "熟义：reel n. 卷轴，鱼线轮。<br><b>本篇语境生义：像收鱼线一样把某人拉回/寻回（形象幽默的口语与外刊表达）</b>",
+      "collocations": "reel sb. in / back; reel from a shock<br>同义替换：pull back, guide back, bring back",
+      "sentence": "Yu eventually spotted her and, as she put it, \"<b>reeled her back</b>\" to her seat."
+    },
+    {
+      "id": 22,
+      "match": "overjoyed",
+      "type": "cet6",
+      "word": "overjoyed / adj.",
+      "phonetic": "/ˌəʊvəˈdʒɔɪd/",
+      "meaning": "欣喜若狂的，极其高兴的（替换 very happy）",
+      "collocations": "be overjoyed at / to do sth.<br>同义替换：thrilled, ecstatic, delighted, elated",
+      "sentence": "\"My mother was <b>overjoyed</b>. She had always wanted to see that singer perform, and spending that time together brought us much closer.\""
+    },
+    {
+      "id": 23,
+      "match": "distinguishes",
+      "type": "cet6",
+      "word": "distinguish / v.",
+      "phonetic": "/dɪˈstɪŋɡwɪʃ/",
+      "meaning": "区分，辨别；使具有特色（高频搭配 distinguish A from B）",
+      "collocations": "distinguish A from B; distinguish oneself<br>同义替换：differentiate, tell apart, set apart",
+      "sentence": "Yu <b>distinguishes</b> her actions from the traditional understanding of filial piety."
+    },
+    {
+      "id": 24,
+      "match": "Conventional",
+      "type": "cet6",
+      "word": "conventional / adj.",
+      "phonetic": "/kənˈvenʃənl/",
+      "meaning": "传统的，惯常的，常规的（替换 traditional / normal）",
+      "collocations": "conventional filial piety / wisdom / medicine<br>同义替换：traditional, orthodox, customary, mainstream",
+      "sentence": "\"<b>Conventional</b> filial piety is about repaying a debt — they raised me, so I accompany them in old age,\" she said.",
+      "relatedWords": [
+        {
+          "word": "reversal",
+          "relation": "对比",
+          "targetId": 1
+        },
+        {
+          "word": "filial piety",
+          "relation": "搭配",
+          "targetId": 5
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "match": "repaying",
+      "type": "cet6",
+      "word": "repay / v.",
+      "phonetic": "/rɪˈpeɪ/",
+      "meaning": "偿还，报答，回报（债务、恩情、信任等）",
+      "collocations": "repay a debt / kindness / trust<br>同义替换：pay back, reciprocate, return",
+      "sentence": "\"Conventional filial piety is about <b>repaying</b> a debt — they raised me, so I accompany them in old age,\" she said."
+    },
+    {
+      "id": 26,
+      "match": "genuine",
+      "type": "cet6",
+      "word": "genuine / adj.",
+      "phonetic": "/ˈdʒenjuɪn/",
+      "meaning": "真诚的，发自内心的；真正的，名副其实的",
+      "collocations": "genuine love / concern / interest; genuine leather<br>同义替换：sincere, authentic, heartfelt, real",
+      "sentence": "\"But going to concerts with my mother comes from <b>genuine</b> love because we have a close relationship.\"",
+      "writingTip": "人际与公益话题加分词：Lasting community cohesion stems from genuine empathy rather than superficial charity."
+    },
+    {
+      "id": 27,
+      "match": "intergenerational",
+      "type": "ielts",
+      "word": "intergenerational / adj.",
+      "phonetic": "/ˌɪntədʒenəˈreɪʃənl/",
+      "meaning": "代际的，不同世代之间的（雅思老龄化/家庭/贫富差距话题 8 分核心词）",
+      "collocations": "intergenerational relationships / gap / mobility / solidarity<br>同义替换：cross-generational, between generations",
+      "sentence": "Yao Huasong, a sociology professor at Guangzhou University, views the trend as a positive evolution in <b>intergenerational</b> relationships.",
+      "writingTip": "家庭与社会老龄化话题：Shared hobbies and mutual learning can significantly strengthen intergenerational bonds.",
+      "relatedWords": [
+        {
+          "word": "digital divide",
+          "relation": "成因",
+          "targetId": 6
+        },
+        {
+          "word": "inevitable",
+          "relation": "特征",
+          "targetId": 30
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "match": "literacy",
+      "type": "ielts",
+      "word": "literacy / n.",
+      "phonetic": "/ˈlɪtərəsi/",
+      "meaning": "熟义：读写能力，识字。<br><b>本篇语境生义：（某一领域的）素养，专业能力（digital / financial / media literacy）</b>",
+      "collocations": "digital and information literacy; media / financial literacy<br>同义替换：competence, proficiency, fluency",
+      "sentence": "…young people's stronger digital and information <b>literacy</b>, their willingness to invest time and patience…",
+      "writingTip": "科技与教育万能表达：Cultivating media literacy is essential for citizens to discern misinformation online.",
+      "relatedWords": [
+        {
+          "word": "digital divide",
+          "relation": "对应",
+          "targetId": 6
+        },
+        {
+          "word": "navigate",
+          "relation": "能力表现",
+          "targetId": 3
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "match": "set aside",
+      "type": "cet6",
+      "word": "set aside / phr.",
+      "phonetic": "/set əˈsaɪd/",
+      "meaning": "放下，抛开（成见、权威、分歧）；留出（时间、金钱）",
+      "collocations": "set aside traditional authority / differences; set aside funds<br>同义替换：put aside, lay aside, reserve, allocate",
+      "sentence": "…and parents' growing readiness to <b>set aside</b> traditional authority and engage in more equal dialogue."
+    },
+    {
+      "id": 30,
+      "match": "inevitable",
+      "type": "cet6",
+      "word": "inevitable / adj.",
+      "phonetic": "/ɪnˈevɪtəbl/",
+      "meaning": "不可避免的，必然发生的（名词 inevitability）",
+      "collocations": "generational differences are inevitable; an inevitable consequence<br>同义替换：unavoidable, inescapable, bound to happen",
+      "sentence": "Generational differences are <b>inevitable</b>, he wrote, but what matters most is how both sides respond to them."
+    }
+  ]
+}

@@ -1,5 +1,42 @@
 [
   {
+    "id": "re-raising-parents-day2",
+    "title": "Re-raising Parents: China's New Filial Piety",
+    "genre": "外刊",
+    "sourceLabel": "📰 China Daily 外刊精读",
+    "day": 2,
+    "date": "2026-11-23",
+    "summary": "从被动尽孝到主动「重新养育父母」：聚焦数字鸿沟下的代际反哺、情感陪伴与家庭角色重塑。",
+    "wordCount": 767,
+    "vocabCount": 30,
+    "sentenceCount": 4,
+    "tags": [
+      "CET-6",
+      "IELTS 7.5+",
+      "社会文化",
+      "代际关系"
+    ],
+    "keywords": [
+      "reversal",
+      "in a bid to",
+      "navigate",
+      "gained traction",
+      "filial piety",
+      "digital divide",
+      "came of age",
+      "algorithm-driven",
+      "supplements",
+      "inferior",
+      "spark",
+      "exhausted",
+      "pursued",
+      "take the initiative",
+      "blooming"
+    ],
+    "pdfPath": "assets/pdfs/Re-raising_Parents_Day2_2026-11-23.pdf",
+    "dataPath": "data/entries/re-raising-parents-day2.json"
+  },
+  {
     "id": "agricultural-revolution-day1",
     "title": "The Agricultural Revolution",
     "genre": "学术社科",
