@@ -11,6 +11,9 @@ const appState = {
   vocabFilter: "all",
   vocabSearch: "",
   maskMeaning: false,
+  focusedVocabId: null,
+  hideEnSentences: false,
+  revealedSentences: {},
   fcDeckMode: "all",
   fcDeck: [],
   fcIndex: 0,
@@ -25,18 +28,29 @@ function loadUserState() {
       return {
         theme: parsed.theme || "light",
         bookmarks: parsed.bookmarks || {},
-        vocabStatus: parsed.vocabStatus || {}, // key: `${entryId}::${wordId}` -> { mastered, review, star }
+        vocabStatus: parsed.vocabStatus || {},
+        lastStudied: parsed.lastStudied || {},
+        lastExportAt: parsed.lastExportAt || null,
+        masteredSinceExport: Number(parsed.masteredSinceExport || 0),
       };
     }
   } catch (e) {
     console.warn("Failed to parse saved state:", e);
   }
-  return { theme: "light", bookmarks: {}, vocabStatus: {} };
+  return {
+    theme: "light",
+    bookmarks: {},
+    vocabStatus: {},
+    lastStudied: {},
+    lastExportAt: null,
+    masteredSinceExport: 0,
+  };
 }
 
 function saveUserState() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(appState.user));
   updateGlobalStats();
+  updateBackupStatus();
 }
 
 function getWordState(entryId, wordId) {
@@ -46,8 +60,48 @@ function getWordState(entryId, wordId) {
 function setWordState(entryId, wordId, patch) {
   const key = `${entryId}::${wordId}`;
   const prev = getWordState(entryId, wordId);
-  appState.user.vocabStatus[key] = { ...prev, ...patch };
+  const next = { ...prev, ...patch };
+  if (!prev.mastered && next.mastered) {
+    appState.user.masteredSinceExport = (appState.user.masteredSinceExport || 0) + 1;
+  }
+  appState.user.vocabStatus[key] = next;
   saveUserState();
+}
+
+function updateBackupStatus() {
+  const el = document.getElementById("backup-status");
+  if (!el) return;
+  const last = appState.user.lastExportAt;
+  const delta = appState.user.masteredSinceExport || 0;
+  let warn = false;
+  let text = "上次备份：从未";
+
+  if (last) {
+    const days = Math.floor((Date.now() - new Date(last).getTime()) / 86400000);
+    const dateStr = String(last).slice(0, 10);
+    text = `上次备份：${dateStr}`;
+    if (days >= 3) {
+      warn = true;
+      text = `上次备份：${days}天前 · 建议备份`;
+    }
+  }
+  if (delta >= 10) {
+    warn = true;
+    text = `新增掌握 ${delta} 词 · 建议导出备份`;
+  }
+  el.textContent = text;
+  el.classList.toggle("is-warn", warn);
+}
+
+function getReviewHint(entry) {
+  const m = getEntryMastery(entry);
+  if (m.total > 0 && m.pct >= 100) return { text: "🎉 全部已掌握", warn: false };
+  const ts = appState.user.lastStudied?.[entry.id];
+  if (!ts) return null;
+  const days = Math.floor((Date.now() - new Date(ts).getTime()) / 86400000);
+  if (days >= 3) return { text: `距上次学习 ${days} 天 · 建议复习`, warn: true };
+  if (days === 0) return { text: "今日已学习", warn: false };
+  return { text: `${days} 天前学习`, warn: false };
 }
 
 function showToast(msg) {
@@ -111,7 +165,7 @@ function renderCatalog() {
     if (appState.genre !== "all" && e.genre !== appState.genre) return false;
     if (appState.onlyBookmarked && !appState.user.bookmarks[e.id]) return false;
     if (q) {
-      const hay = [e.title, e.subtitle, e.genre, ...(e.tags || []), ...(e.keywords || [])]
+      const hay = [e.title, e.subtitle, e.genre, e.sourceLabel || "", ...(e.tags || []), ...(e.keywords || [])]
         .join(" ")
         .toLowerCase();
       if (!hay.includes(q)) return false;
@@ -138,13 +192,22 @@ function renderCatalog() {
     .map((e) => {
       const m = getEntryMastery(e);
       const isBookmarked = !!appState.user.bookmarks[e.id];
+      const hint = getReviewHint(e);
+      const sourceHtml = e.sourceLabel ? `<span class="badge source-badge">${e.sourceLabel}</span>` : "";
+      const reviewHtml = hint
+        ? `<span class="review-pill ${hint.warn ? "is-warn" : ""}">${hint.text}</span>`
+        : "";
       return `
       <article class="doc-card" data-id="${e.id}">
         <div class="card-top">
-          <span class="badge genre-badge">${e.genre}</span>
+          <div class="card-badges">
+            <span class="badge genre-badge">${e.genre}</span>
+            ${sourceHtml}
+          </div>
           <span class="card-date">📅 ${e.date} · Day ${e.day || 1}</span>
         </div>
         <h3 class="card-title" data-open="${e.id}">${e.title}</h3>
+        ${reviewHtml ? `<div class="card-status-row">${reviewHtml}</div>` : ""}
         <p class="card-summary">${e.summary || ""}</p>
         <div class="card-metrics">
           <span>📝 ${e.wordCount} 词</span>
@@ -160,12 +223,46 @@ function renderCatalog() {
         </div>
         <div class="card-actions">
           <button class="btn btn-primary" data-open="${e.id}">进入精读工作台</button>
-          <a class="btn btn-outline" href="${e.pdfPath}" download title="下载 PDF">⬇</a>
+          <button class="btn btn-outline has-tooltip" type="button" data-export-md="${e.id}" data-tooltip="导出本篇讲义与词表 (Markdown)" aria-label="导出本篇讲义与词表 (Markdown)">⬇</button>
           <button class="btn btn-outline ${isBookmarked ? "active" : ""}" data-bookmark="${e.id}" title="收藏讲义">⭐</button>
         </div>
       </article>`;
     })
     .join("");
+}
+
+function switchStudyTab(tabName) {
+  document.querySelectorAll(".study-tab").forEach((t) => {
+    t.classList.toggle("active", t.dataset.tab === tabName);
+  });
+  document.querySelectorAll(".tab-panel").forEach((p) => {
+    p.classList.toggle("active", p.id === `panel-${tabName}`);
+  });
+}
+
+function jumpToVocabCard(wordId) {
+  if (!appState.currentData) return;
+  switchStudyTab("vocab");
+  let card = document.querySelector(`#vocab-list .vocab-card[data-wid="${wordId}"]`);
+  if (!card) {
+    appState.vocabFilter = "all";
+    appState.vocabSearch = "";
+    document.getElementById("vocab-search").value = "";
+    document.querySelectorAll("#vocab-filters .mini-pill").forEach((p) => {
+      p.classList.toggle("active", p.dataset.filter === "all");
+    });
+    renderVocabList();
+    card = document.querySelector(`#vocab-list .vocab-card[data-wid="${wordId}"]`);
+  }
+  if (!card) return;
+  appState.focusedVocabId = Number(wordId);
+  document.querySelectorAll("#vocab-list .vocab-card.kb-focused").forEach((el) => el.classList.remove("kb-focused"));
+  card.classList.add("kb-focused");
+  card.scrollIntoView({ behavior: "smooth", block: "center" });
+  card.classList.remove("card-pulse");
+  void card.offsetWidth;
+  card.classList.add("card-pulse");
+  setTimeout(() => card.classList.remove("card-pulse"), 1600);
 }
 
 async function openWorkspace(entryId) {
@@ -180,20 +277,48 @@ async function openWorkspace(entryId) {
     appState.currentData = data;
     appState.vocabFilter = "all";
     appState.vocabSearch = "";
+    appState.focusedVocabId = data.vocab?.[0]?.id ?? null;
+    appState.hideEnSentences = false;
+    appState.revealedSentences = {};
+
+    appState.user.lastStudied[entry.id] = new Date().toISOString();
+    saveUserState();
+
     document.getElementById("vocab-search").value = "";
+    document.querySelectorAll("#vocab-filters .mini-pill").forEach((p) => {
+      p.classList.toggle("active", p.dataset.filter === "all");
+    });
+    const hideBtn = document.getElementById("btn-hide-en-sent");
+    if (hideBtn) {
+      hideBtn.classList.remove("active");
+      hideBtn.textContent = "👁️ 遮挡英文原句（汉译英自测）";
+    }
 
     document.getElementById("ws-genre").textContent = entry.genre;
+    const wsSource = document.getElementById("ws-source");
+    const srcText = entry.sourceLabel || data.sourceLabel || "";
+    if (wsSource) {
+      wsSource.textContent = srcText;
+      wsSource.classList.toggle("hidden", !srcText);
+    }
     document.getElementById("ws-title").textContent = entry.title;
     document.getElementById("ws-meta").textContent = `Day ${entry.day || 1} · ${entry.date} · ${entry.wordCount} 词`;
     document.getElementById("tab-vocab-count").textContent = data.vocab.length;
     document.getElementById("tab-sent-count").textContent = data.sentences.length;
 
-    document.getElementById("pdf-frame").src = entry.pdfPath;
     document.getElementById("btn-open-pdf").href = entry.pdfPath;
     document.getElementById("btn-download-pdf").href = entry.pdfPath;
 
     document.getElementById("catalog-view").classList.add("hidden");
     document.getElementById("workspace-view").classList.remove("hidden");
+    switchStudyTab("vocab");
+
+    if (window.Workbench) {
+      window.Workbench.renderNativeReader(entry, data, {
+        onWordSelect: jumpToVocabCard,
+        speakFn: speakWord,
+      });
+    }
 
     renderVocabList();
     renderSentencesList();
@@ -206,19 +331,25 @@ async function openWorkspace(entryId) {
 }
 
 function closeWorkspace() {
+  if (window.Workbench) {
+    window.Workbench.stopParagraphTTS();
+    window.Workbench.hideTooltip(true);
+  }
   document.getElementById("workspace-view").classList.add("hidden");
   document.getElementById("catalog-view").classList.remove("hidden");
-  document.getElementById("pdf-frame").src = "about:blank";
+  const iframe = document.getElementById("pdf-frame");
+  if (iframe) {
+    iframe.src = "about:blank";
+    iframe.removeAttribute("data-loaded-src");
+  }
   renderCatalog();
 }
 
-function renderVocabList() {
-  if (!appState.currentData) return;
+function getFilteredVocab() {
+  if (!appState.currentData) return [];
   const entryId = appState.currentEntry.id;
   const q = appState.vocabSearch.trim().toLowerCase();
-  const listEl = document.getElementById("vocab-list");
-
-  const filtered = appState.currentData.vocab.filter((v) => {
+  return appState.currentData.vocab.filter((v) => {
     const st = getWordState(entryId, v.id);
     if (appState.vocabFilter === "cet6" && v.type !== "cet6") return false;
     if (appState.vocabFilter === "ielts" && v.type !== "ielts") return false;
@@ -226,15 +357,53 @@ function renderVocabList() {
     if (appState.vocabFilter === "review" && !st.review) return false;
     if (appState.vocabFilter === "star" && !st.star) return false;
     if (q) {
-      const hay = `${v.word} ${v.match} ${v.meaning} ${v.collocations}`.toLowerCase();
+      const hay = `${v.word} ${v.match} ${v.meaning} ${v.collocations} ${v.writingTip || ""}`.toLowerCase();
       if (!hay.includes(q)) return false;
     }
     return true;
   });
+}
+
+function renderRelatedWordsHtml(relatedWords) {
+  if (!Array.isArray(relatedWords) || !relatedWords.length) return "";
+  const allVocab = appState.currentData?.vocab || [];
+  const chips = relatedWords
+    .map((item) => {
+      const isObj = item && typeof item === "object";
+      const label = isObj ? item.word || "" : String(item || "");
+      const rel = isObj && item.relation ? `${item.relation} ` : "";
+      let targetId = isObj ? item.targetId : null;
+      if (!targetId && label) {
+        const lower = label.toLowerCase();
+        const hit = allVocab.find(
+          (x) =>
+            (x.match && x.match.toLowerCase() === lower) ||
+            (x.word && x.word.toLowerCase().includes(lower))
+        );
+        if (hit) targetId = hit.id;
+      }
+      if (targetId) {
+        return `<button class="rel-chip is-link" type="button" data-jump-word="${targetId}" title="点击跳转至 #${targetId} 词卡">${rel}${label} ↗</button>`;
+      }
+      return `<span class="rel-chip">${rel}${label}</span>`;
+    })
+    .join("");
+  return `<div class="vc-related"><span class="vc-rel-label">🔗 关联词群：</span>${chips}</div>`;
+}
+
+function renderVocabList() {
+  if (!appState.currentData) return;
+  const entryId = appState.currentEntry.id;
+  const listEl = document.getElementById("vocab-list");
+  const filtered = getFilteredVocab();
 
   if (!filtered.length) {
     listEl.innerHTML = `<div class="empty-state"><p>当前筛选条件下没有匹配的词汇。</p></div>`;
     return;
+  }
+
+  if (!filtered.some((v) => v.id === appState.focusedVocabId)) {
+    appState.focusedVocabId = filtered[0].id;
   }
 
   listEl.innerHTML = filtered
@@ -242,8 +411,18 @@ function renderVocabList() {
       const st = getWordState(entryId, v.id);
       const tagClass = v.type === "cet6" ? "tag-cet6" : "tag-ielts";
       const tagLabel = v.type === "cet6" ? "CET-6" : "IELTS";
-      const cardClass = st.mastered ? "is-mastered" : st.review ? "is-review" : "";
+      const cardClass = [
+        st.mastered ? "is-mastered" : st.review ? "is-review" : "",
+        v.id === appState.focusedVocabId ? "kb-focused" : "",
+      ]
+        .filter(Boolean)
+        .join(" ");
       const maskClass = appState.maskMeaning ? "masked" : "";
+      const writingHtml = v.writingTip
+        ? `<div class="vc-writing"><span class="vc-sub-tag">✍️ 写作/替换应用</span>${v.writingTip}</div>`
+        : "";
+      const relatedHtml = renderRelatedWordsHtml(v.relatedWords);
+
       return `
       <div class="vocab-card ${cardClass}" data-wid="${v.id}">
         <div class="vc-head">
@@ -253,20 +432,25 @@ function renderVocabList() {
             <span class="vc-phonetic">${v.phonetic}</span>
             <span class="${tagClass}">${tagLabel}</span>
           </div>
-          <div class="vc-tts">
-            <button class="tts-btn" data-speak="${v.match}" data-lang="en-GB" title="英音朗读">🇬🇧</button>
-            <button class="tts-btn" data-speak="${v.match}" data-lang="en-US" title="美音朗读">🇺🇸</button>
+          <div class="vc-top-tools">
+            <button class="tts-btn" data-speak="${v.match}" data-lang="en-GB" title="英音朗读">GB</button>
+            <button class="tts-btn" data-speak="${v.match}" data-lang="en-US" title="美音朗读">US</button>
+            <button class="icon-tool-btn" data-locate="${v.id}" title="在左侧正文中定位此词">📍</button>
+            <button class="icon-tool-btn ${st.review ? "active-review" : ""}" data-act="review" data-wid="${v.id}" title="标记需复习">🔖</button>
+            <button class="icon-tool-btn ${st.star ? "active-star" : ""}" data-act="star" data-wid="${v.id}" title="收藏词条">⭐</button>
           </div>
         </div>
         <div class="vc-body">
           <div class="vc-meaning ${maskClass}" onclick="this.classList.toggle('masked')">${v.meaning}</div>
           <div class="vc-colloc">${v.collocations}</div>
-          <div class="vc-sent">${v.sentence}</div>
+          <div class="vc-sent vc-sent-clickable" data-locate="${v.id}" title="点击定位至左侧原文对应句子">${v.sentence}</div>
+          ${writingHtml}
+          ${relatedHtml}
         </div>
-        <div class="vc-actions">
-          <button class="state-btn ${st.mastered ? "active-mastered" : ""}" data-act="mastered" data-wid="${v.id}">✅ 已掌握</button>
-          <button class="state-btn ${st.review ? "active-review" : ""}" data-act="review" data-wid="${v.id}">🔖 需复习</button>
-          <button class="state-btn ${st.star ? "active-star" : ""}" data-act="star" data-wid="${v.id}">⭐ 收藏</button>
+        <div class="vc-actions vc-actions-single">
+          <button class="state-btn ${st.mastered ? "active-mastered" : ""}" data-act="mastered" data-wid="${v.id}">
+            ${st.mastered ? "✅ 已掌握（点击取消）" : "✅ 标记已掌握"}
+          </button>
         </div>
       </div>`;
     })
@@ -276,20 +460,43 @@ function renderVocabList() {
 function renderSentencesList() {
   if (!appState.currentData) return;
   const listEl = document.getElementById("sentences-list");
+  const hideMode = appState.hideEnSentences;
+
   listEl.innerHTML = appState.currentData.sentences
-    .map(
-      (s) => `
+    .map((s) => {
+      const isRevealed = !hideMode || !!appState.revealedSentences[s.id];
+      const zhHtml = s.zhTranslation
+        ? `<div class="sent-zh"><span class="sent-label">中文参考译文：</span>${s.zhTranslation}</div>`
+        : hideMode
+        ? `<div class="sent-zh"><span class="sent-label">汉译英提示：</span>请结合下方「主干提取」与「语法拆解」尝试回译英文原句。</div>`
+        : "";
+      const origHtml = isRevealed
+        ? `<div class="sent-orig">${s.original}</div>`
+        : `<div class="sent-orig-masked">
+             <span>英文原句已遮挡 — 请先根据中文译文与句法结构口头或书面回译</span>
+             <button class="btn btn-sm btn-primary" type="button" data-reveal-sent="${s.id}">👁️ 显示原句对比</button>
+           </div>`;
+      const hideAgainBtn =
+        hideMode && appState.revealedSentences[s.id]
+          ? `<button class="btn btn-sm btn-ghost" type="button" data-reveal-sent="${s.id}">🙈 重新遮挡</button>`
+          : "";
+
+      return `
       <div class="sent-card">
         <div class="vc-head">
           <strong class="sent-label">长难句精析 #${s.id}</strong>
-          <button class="btn btn-sm btn-outline" data-copy-sent="${s.id}">📋 复制仿写模板</button>
+          <div class="sent-head-actions">
+            ${hideAgainBtn}
+            <button class="btn btn-sm btn-outline" data-copy-sent="${s.id}">📋 复制仿写模板</button>
+          </div>
         </div>
-        <div class="sent-orig">${s.original}</div>
+        ${origHtml}
+        ${zhHtml}
         <div class="sent-block"><span class="sent-label">主干提取：</span>${s.backbone}</div>
         <div class="sent-block"><span class="sent-label">语法拆解：</span><br>${s.grammar}</div>
         <div class="sent-template">${s.template}</div>
-      </div>`
-    )
+      </div>`;
+    })
     .join("");
 }
 
@@ -364,8 +571,22 @@ function bindEvents() {
     renderCatalog();
   });
 
+  // Global Vocab Review Drawer trigger
+  document.getElementById("btn-global-vocab")?.addEventListener("click", () => {
+    if (!window.GlobalReview) return;
+    window.GlobalReview.open(appState.catalog, getWordState);
+  });
+
   // Catalog clicks
   document.getElementById("catalog-grid").addEventListener("click", (e) => {
+    const mdBtn = e.target.closest("[data-export-md]");
+    if (mdBtn) {
+      const entry = appState.catalog.find((x) => x.id === mdBtn.dataset.exportMd);
+      if (entry && window.GlobalReview) {
+        window.GlobalReview.exportEntryMarkdown(entry, showToast);
+      }
+      return;
+    }
     const openBtn = e.target.closest("[data-open]");
     if (openBtn) {
       openWorkspace(openBtn.dataset.open);
@@ -389,11 +610,26 @@ function bindEvents() {
   document.querySelector(".study-tabs").addEventListener("click", (e) => {
     const tab = e.target.closest(".study-tab");
     if (!tab) return;
-    document.querySelectorAll(".study-tab").forEach((t) => t.classList.remove("active"));
-    document.querySelectorAll(".tab-panel").forEach((p) => p.classList.remove("active"));
-    tab.classList.add("active");
-    document.getElementById(`panel-${tab.dataset.tab}`).classList.add("active");
+    switchStudyTab(tab.dataset.tab);
   });
+
+  // Shortcut popover toggle
+  const shortcutBtn = document.getElementById("btn-shortcuts");
+  const shortcutPop = document.getElementById("shortcut-popover");
+  if (shortcutBtn && shortcutPop) {
+    shortcutBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const willShow = shortcutPop.classList.contains("hidden");
+      shortcutPop.classList.toggle("hidden", !willShow);
+      shortcutBtn.setAttribute("aria-expanded", String(willShow));
+    });
+    document.addEventListener("click", (e) => {
+      if (!shortcutPop.classList.contains("hidden") && !e.target.closest(".shortcut-wrap")) {
+        shortcutPop.classList.add("hidden");
+        shortcutBtn.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
 
   // Vocab filters & actions
   document.getElementById("vocab-filters").addEventListener("click", (e) => {
@@ -418,11 +654,35 @@ function bindEvents() {
   });
 
   document.getElementById("vocab-list").addEventListener("click", (e) => {
+    const card = e.target.closest(".vocab-card");
+    if (card) {
+      appState.focusedVocabId = Number(card.dataset.wid);
+      document.querySelectorAll("#vocab-list .vocab-card.kb-focused").forEach((el) => el.classList.remove("kb-focused"));
+      card.classList.add("kb-focused");
+    }
+
     const tts = e.target.closest("[data-speak]");
     if (tts) {
       speakWord(tts.dataset.speak, tts.dataset.lang);
       return;
     }
+
+    const locate = e.target.closest("[data-locate]");
+    if (locate) {
+      const wid = Number(locate.dataset.locate);
+      if (window.Workbench) {
+        const ok = window.Workbench.scrollToWordInReader(wid);
+        if (!ok) showToast("该词未在原生正文中直接匹配到原形");
+      }
+      return;
+    }
+
+    const jumpBtn = e.target.closest("[data-jump-word]");
+    if (jumpBtn) {
+      jumpToVocabCard(Number(jumpBtn.dataset.jumpWord));
+      return;
+    }
+
     const actBtn = e.target.closest("[data-act]");
     if (actBtn && appState.currentEntry) {
       const wid = Number(actBtn.dataset.wid);
@@ -439,8 +699,25 @@ function bindEvents() {
     }
   });
 
-  // Copy sentence template
+  // Sentences back-translation toggle & copy template
+  document.getElementById("btn-hide-en-sent")?.addEventListener("click", (e) => {
+    appState.hideEnSentences = !appState.hideEnSentences;
+    appState.revealedSentences = {};
+    e.currentTarget.classList.toggle("active", appState.hideEnSentences);
+    e.currentTarget.textContent = appState.hideEnSentences
+      ? "👁️ 显示全部英文原句"
+      : "👁️ 遮挡英文原句（汉译英自测）";
+    renderSentencesList();
+  });
+
   document.getElementById("sentences-list").addEventListener("click", async (e) => {
+    const revealBtn = e.target.closest("[data-reveal-sent]");
+    if (revealBtn) {
+      const sid = revealBtn.dataset.revealSent;
+      appState.revealedSentences[sid] = !appState.revealedSentences[sid];
+      renderSentencesList();
+      return;
+    }
     const btn = e.target.closest("[data-copy-sent]");
     if (!btn || !appState.currentData) return;
     const s = appState.currentData.sentences.find((x) => String(x.id) === btn.dataset.copySent);
@@ -517,22 +794,101 @@ function bindEvents() {
     renderVocabList();
   });
 
-  // Keyboard shortcut for flashcard
+  // Unified keyboard shortcuts (Vocab List + Flashcards + Global Review Drawer)
   document.addEventListener("keydown", (e) => {
-    const panel = document.getElementById("panel-flashcards");
-    if (!panel.classList.contains("active") || e.target.tagName === "INPUT") return;
-    if (e.code === "Space") {
-      e.preventDefault();
-      document.getElementById("flashcard").classList.toggle("flipped");
-    } else if (e.code === "ArrowRight") {
-      document.getElementById("fc-next").click();
-    } else if (e.code === "ArrowLeft") {
-      document.getElementById("fc-prev").click();
+    const tag = e.target?.tagName;
+    if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT") return;
+
+    if (window.GlobalReview?.isOpen()) {
+      if (e.key === "Escape") {
+        window.GlobalReview.close();
+      } else if (e.key === "ArrowRight" || e.key === "ArrowDown") {
+        e.preventDefault();
+        document.getElementById("gr-next")?.click();
+      } else if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
+        e.preventDefault();
+        document.getElementById("gr-prev")?.click();
+      } else if (e.code === "Space") {
+        e.preventDefault();
+        document.querySelector("#gr-flashcard .gr-tts-btn[data-accent='en-US']")?.click();
+      } else if (e.key.toLowerCase() === "h") {
+        e.preventDefault();
+        document.getElementById("gr-flashcard")?.classList.toggle("flipped");
+      } else if (e.key === "Enter") {
+        e.preventDefault();
+        document.getElementById("gr-mark-mastered")?.click();
+      }
+      return;
+    }
+
+    const wsHidden = document.getElementById("workspace-view")?.classList.contains("hidden");
+    if (wsHidden) return;
+
+    const vocabActive = document.getElementById("panel-vocab")?.classList.contains("active");
+    const fcActive = document.getElementById("panel-flashcards")?.classList.contains("active");
+
+    if (fcActive && appState.fcDeck.length) {
+      const cur = appState.fcDeck[appState.fcIndex];
+      if (e.key === "ArrowDown" || e.key === "ArrowRight") {
+        e.preventDefault();
+        document.getElementById("fc-next")?.click();
+      } else if (e.key === "ArrowUp" || e.key === "ArrowLeft") {
+        e.preventDefault();
+        document.getElementById("fc-prev")?.click();
+      } else if (e.code === "Space") {
+        e.preventDefault();
+        if (cur) speakWord(cur.match || cur.word, "en-US");
+      } else if (e.key.toLowerCase() === "h") {
+        e.preventDefault();
+        document.getElementById("flashcard")?.classList.toggle("flipped");
+      } else if (e.key === "Enter") {
+        e.preventDefault();
+        document.getElementById("fc-mark-mastered")?.click();
+      }
+      return;
+    }
+
+    if (vocabActive && appState.currentEntry) {
+      const list = getFilteredVocab();
+      if (!list.length) return;
+      let idx = list.findIndex((v) => v.id === appState.focusedVocabId);
+      if (idx < 0) idx = 0;
+
+      if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+        e.preventDefault();
+        const nextIdx = e.key === "ArrowDown" ? (idx + 1) % list.length : (idx - 1 + list.length) % list.length;
+        appState.focusedVocabId = list[nextIdx].id;
+        document.querySelectorAll("#vocab-list .vocab-card.kb-focused").forEach((el) => el.classList.remove("kb-focused"));
+        const target = document.querySelector(`#vocab-list .vocab-card[data-wid="${appState.focusedVocabId}"]`);
+        if (target) {
+          target.classList.add("kb-focused");
+          target.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+      } else if (e.code === "Space") {
+        e.preventDefault();
+        const cur = list[idx];
+        if (cur) speakWord(cur.match || cur.word, "en-US");
+      } else if (e.key.toLowerCase() === "h") {
+        e.preventDefault();
+        document.getElementById("btn-mask-meaning")?.click();
+      } else if (e.key === "Enter") {
+        e.preventDefault();
+        const cur = list[idx];
+        if (cur) {
+          const st = getWordState(appState.currentEntry.id, cur.id);
+          setWordState(appState.currentEntry.id, cur.id, { mastered: !st.mastered, review: false });
+          showToast(!st.mastered ? `已掌握「${cur.match || cur.word}」✅` : `已取消掌握「${cur.match || cur.word}」`);
+          renderVocabList();
+        }
+      }
     }
   });
 
   // Export / Import JSON progress
   document.getElementById("btn-export").addEventListener("click", () => {
+    appState.user.lastExportAt = new Date().toISOString();
+    appState.user.masteredSinceExport = 0;
+    saveUserState();
     const blob = new Blob([JSON.stringify(appState.user, null, 2)], { type: "application/json" });
     const a = document.createElement("a");
     a.href = URL.createObjectURL(blob);
@@ -554,6 +910,9 @@ function bindEvents() {
         theme: data.theme || appState.user.theme,
         bookmarks: data.bookmarks || {},
         vocabStatus: data.vocabStatus || {},
+        lastStudied: data.lastStudied || appState.user.lastStudied || {},
+        lastExportAt: data.lastExportAt || new Date().toISOString(),
+        masteredSinceExport: 0,
       };
       saveUserState();
       applyTheme(appState.user.theme);
@@ -570,6 +929,21 @@ function bindEvents() {
 async function init() {
   applyTheme(appState.user.theme);
   bindEvents();
+  if (window.GlobalReview) {
+    window.GlobalReview.initBindings({
+      speakWord,
+      setWordState,
+      showToast,
+      onProgressChange: () => {
+        renderCatalog();
+        if (appState.currentData) {
+          renderVocabList();
+          rebuildFlashcardDeck();
+        }
+      },
+    });
+  }
+  updateBackupStatus();
   try {
     const res = await fetch("data/catalog.json");
     appState.catalog = await res.json();

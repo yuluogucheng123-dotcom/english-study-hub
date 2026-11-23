@@ -16,28 +16,32 @@
       "original": "The transition from foraging to agriculture, often hailed as humanity’s greatest leap forward, was in hindsight a remarkably ambivalent bargain.",
       "backbone": "<b>The transition</b> (主语) <b>was</b> (系动词) <b>a remarkably ambivalent bargain</b> (表语).",
       "grammar": "1. <b>过去分词短语作插入语/后置定语</b>：<code>often hailed as humanity’s greatest leap forward</code> 置于主语和系动词之间，用于引出“世俗普遍观点”，与后文的真实评价形成强烈反差。<br>2. <b>介词短语作评价状语</b>：<code>in hindsight</code>（事后看来）插入系动词与表语之间，赋予全句客观、审视历史语境的学术语气。<br>3. <b>高分词汇张力</b>：用 <code>greatest leap forward</code> 与 <code>ambivalent bargain</code> 形成鲜明语义对照。",
-      "template": "<b>【雅思大作文 / 六级议论文开头反差模板】</b><br>The shift/transition from A to B, often hailed as [普遍赞誉], is in hindsight a remarkably ambivalent/double-edged [性质名词].<br><b>【备考仿写示例（科技与人工智能话题）】</b><br>The transition from traditional classrooms to AI-driven learning, often hailed as education’s greatest leap forward, is in hindsight a remarkably ambivalent bargain that boosts efficiency at the cost of human interaction."
+      "template": "<b>【雅思大作文 / 六级议论文开头反差模板】</b><br>The shift/transition from A to B, often hailed as [普遍赞誉], is in hindsight a remarkably ambivalent/double-edged [性质名词].<br><b>【备考仿写示例（科技与人工智能话题）】</b><br>The transition from traditional classrooms to AI-driven learning, often hailed as education’s greatest leap forward, is in hindsight a remarkably ambivalent bargain that boosts efficiency at the cost of human interaction.",
+      "zhTranslation": "从采集狩猎向农耕的转变，常被赞誉为人类最伟大的飞跃，但事后回望，这却是一场充满矛盾的进化交易。"
     },
     {
       "id": 2,
       "original": "Paradoxically, while the aggregate supply of calories surged, individual nutrition deteriorated, as monotonous cereal-based diets deprived early farmers of essential vitamins and minerals.",
       "backbone": "<b>individual nutrition</b> (主语) <b>deteriorated</b> (谓语).",
       "grammar": "1. <b>评注性状语前置</b>：句首 <code>Paradoxically</code>（讽刺的是/矛盾地）直接点明“宏观增长”与“微观恶化”的悖论逻辑。<br>2. <b>while 引导让步/对比状语从句</b>：<code>while the aggregate supply of calories surged</code> 将“总热量激增”与主句“个体营养恶化”精准对置。<br>3. <b>as 引导原因状语从句 + 固定搭配</b>：<code>as monotonous cereal-based diets deprived early farmers of...</code> 解释悖论成因，并活用高频考点搭配 <code>deprive sb. of sth.</code>。",
-      "template": "<b>【雅思大作文 / 图表作文对比因果模板】</b><br>Paradoxically, while the aggregate [宏观指标] has surged, individual [微观体验] has deteriorated, as [核心原因] deprives people of [关键要素].<br><b>【备考仿写示例（经济发展与生活质量话题）】</b><br>Paradoxically, while the aggregate wealth of modern cities has surged, individual mental well-being has deteriorated, as relentless competition deprives urban residents of leisure and social connection."
+      "template": "<b>【雅思大作文 / 图表作文对比因果模板】</b><br>Paradoxically, while the aggregate [宏观指标] has surged, individual [微观体验] has deteriorated, as [核心原因] deprives people of [关键要素].<br><b>【备考仿写示例（经济发展与生活质量话题）】</b><br>Paradoxically, while the aggregate wealth of modern cities has surged, individual mental well-being has deteriorated, as relentless competition deprives urban residents of leisure and social connection.",
+      "zhTranslation": "颇具讽刺意味的是，尽管总热量供应激增，但单一个体的营养状况却急剧恶化，因为人们越来越依赖单一的主食作物。"
     },
     {
       "id": 3,
       "original": "Moreover, dense sedentary settlements became breeding grounds for pathogens that readily jumped from domesticated livestock to human hosts, triggering devastating epidemics unknown to their wandering ancestors.",
       "backbone": "<b>dense sedentary settlements</b> (主语) <b>became</b> (系动词) <b>breeding grounds for pathogens</b> (表语).",
       "grammar": "1. <b>隐喻型名词短语</b>：<code>breeding grounds for...</code>（……的温床），在雅思写作中用于描述负面现象的滋生环境极富地道感。<br>2. <b>that 引导限制性定语从句</b>：修饰 <code>pathogens</code>，具体阐明病原体跨物种传播的机制。<br>3. <b>现在分词作结果状语 + 形容词短语后置定语</b>：<code>triggering devastating epidemics</code> 表示自然引发的严重后果；<code>unknown to their wandering ancestors</code> 简洁替代定语从句 <code>which were unknown to...</code>，紧凑有力。",
-      "template": "<b>【雅思大作文后果递进论证模板】</b><br>Moreover, [负面环境/现象] has become a breeding ground for [问题] that readily [动作表现], triggering [严重后果] unknown to previous generations.<br><b>【备考仿写示例（社交媒体与虚假信息话题）】</b><br>Moreover, unregulated social media platforms have become breeding grounds for misinformation that readily spreads across borders, triggering public anxiety unknown to previous generations."
+      "template": "<b>【雅思大作文后果递进论证模板】</b><br>Moreover, [负面环境/现象] has become a breeding ground for [问题] that readily [动作表现], triggering [严重后果] unknown to previous generations.<br><b>【备考仿写示例（社交媒体与虚假信息话题）】</b><br>Moreover, unregulated social media platforms have become breeding grounds for misinformation that readily spreads across borders, triggering public anxiety unknown to previous generations.",
+      "zhTranslation": "此外，人口密集的定居点成为了病原体的温床，这些病原体极易从家畜跨物种传播给人类，引发了前所未有的致命瘟疫。"
     },
     {
       "id": 4,
       "original": "Thus, incremental generations walked unknowingly into a gilded cage, trading leisure and biological resilience for demographic expansion and the eventual rise of complex civilizations.",
       "backbone": "<b>incremental generations</b> (主语) <b>walked</b> (谓语) <b>into a gilded cage</b> (状语).",
       "grammar": "1. <b>因果总结与生动隐喻</b>：<code>Thus</code> 统领全篇结论；<code>walked unknowingly into a gilded cage</code>（不知不觉步入镀金牢笼）高度凝练地概括“看似进步实则受困”的演化陷阱。<br>2. <b>现在分词短语作伴随/解释状语</b>：<code>trading A for B</code>（以 A 换取 B）精确拆解这一历史交易的“代价”（leisure and biological resilience）与“收益”（demographic expansion and the eventual rise of complex civilizations），句式工整对称。",
-      "template": "<b>【雅思大作文 / 六级翻译利弊权衡升华模板】</b><br>Thus, modern society has walked unknowingly into a gilded cage, trading [珍贵价值 A] for [表面红利 B].<br><b>【备考仿写示例（城市化与消费主义话题）】</b><br>Thus, contemporary consumers have walked unknowingly into a gilded cage, trading privacy and psychological resilience for algorithmic convenience and instant gratification."
+      "template": "<b>【雅思大作文 / 六级翻译利弊权衡升华模板】</b><br>Thus, modern society has walked unknowingly into a gilded cage, trading [珍贵价值 A] for [表面红利 B].<br><b>【备考仿写示例（城市化与消费主义话题）】</b><br>Thus, contemporary consumers have walked unknowingly into a gilded cage, trading privacy and psychological resilience for algorithmic convenience and instant gratification.",
+      "zhTranslation": "因此，一代又一代人在不知不觉中步入了一座“镀金牢笼”，用原本的闲暇与体质韧性，换取了庞大的人口规模与文明的复杂性。"
     }
   ],
   "vocab": [
@@ -49,7 +53,20 @@
       "phonetic": "/ˈfɒrɪdʒɪŋ/",
       "meaning": "觅食，采集，搜寻食物（雅思阅读人类学/动物行为学高频词）",
       "collocations": "forage for food; foraging society / territory<br>同义替换：gathering, scavenging, hunting-and-gathering",
-      "sentence": "The transition from <b>foraging</b> to agriculture, often hailed as humanity’s greatest leap forward, was in hindsight a remarkably ambivalent bargain."
+      "sentence": "The transition from <b>foraging</b> to agriculture, often hailed as humanity’s greatest leap forward, was in hindsight a remarkably ambivalent bargain.",
+      "writingTip": "大作文对比古今生活方式：Unlike their foraging ancestors, modern urbanites rarely face acute caloric scarcity.",
+      "relatedWords": [
+        {
+          "word": "cultivating",
+          "relation": "演变→",
+          "targetId": 16
+        },
+        {
+          "word": "nomadic",
+          "relation": "伴生",
+          "targetId": 14
+        }
+      ]
     },
     {
       "id": 2,
@@ -79,7 +96,20 @@
       "phonetic": "/æmˈbɪvələnt/",
       "meaning": "矛盾的，爱恨交织的；<b>本篇语境：好坏参半的，利弊并存的</b>",
       "collocations": "ambivalent attitude / feelings; remain ambivalent about<br>同义替换：mixed, equivocal, double-edged, contradictory",
-      "sentence": "The transition from foraging to agriculture, often hailed as humanity’s greatest leap forward, was in hindsight a remarkably <b>ambivalent</b> bargain."
+      "sentence": "The transition from foraging to agriculture, often hailed as humanity’s greatest leap forward, was in hindsight a remarkably <b>ambivalent</b> bargain.",
+      "writingTip": "雅思利弊分析高分句：Public attitudes toward generative AI remain deeply ambivalent, oscillating between excitement and anxiety.",
+      "relatedWords": [
+        {
+          "word": "Paradoxically",
+          "relation": "逻辑呼应",
+          "targetId": 22
+        },
+        {
+          "word": "bargain",
+          "relation": "搭配",
+          "targetId": 5
+        }
+      ]
     },
     {
       "id": 5,
@@ -89,7 +119,15 @@
       "phonetic": "/ˈbɑːɡən/",
       "meaning": "熟义：便宜货，特价商品；讨价还价。<br><b>本篇语境生义：（利弊交换的）交易，协议，买卖</b>",
       "collocations": "strike a bargain; a Faustian bargain; into the bargain<br>同义替换：trade-off, pact, arrangement, deal",
-      "sentence": "The transition from foraging to agriculture, often hailed as humanity’s greatest leap forward, was in hindsight a remarkably ambivalent <b>bargain</b>."
+      "sentence": "The transition from foraging to agriculture, often hailed as humanity’s greatest leap forward, was in hindsight a remarkably ambivalent <b>bargain</b>.",
+      "writingTip": "熟词生义写作替换 trade-off：Rapid urbanization often represents a Faustian bargain between economic velocity and ecological health.",
+      "relatedWords": [
+        {
+          "word": "gilded cage",
+          "relation": "意象呼应",
+          "targetId": 40
+        }
+      ]
     },
     {
       "id": 6,
@@ -149,7 +187,20 @@
       "phonetic": "/ɪnˈfekʃəs/",
       "meaning": "传染性的，易传染的；（情绪等）有感染力的",
       "collocations": "infectious diseases; highly infectious; infectious enthusiasm<br>同义替换：contagious, communicable, transmissible",
-      "sentence": "Because they rarely depended on a single staple crop, famine was relatively uncommon, and <b>infectious</b> diseases seldom decimated their sparse, nomadic bands."
+      "sentence": "Because they rarely depended on a single staple crop, famine was relatively uncommon, and <b>infectious</b> diseases seldom decimated their sparse, nomadic bands.",
+      "writingTip": "公共卫生话题模板：High population density accelerates the transmission of infectious diseases across urban centers.",
+      "relatedWords": [
+        {
+          "word": "pathogens",
+          "relation": "病原体",
+          "targetId": 29
+        },
+        {
+          "word": "epidemics",
+          "relation": "爆发→",
+          "targetId": 30
+        }
+      ]
     },
     {
       "id": 12,
@@ -179,7 +230,20 @@
       "phonetic": "/nəʊˈmædɪk/",
       "meaning": "游牧的，居无定所的，迁徙的（反义词：sedentary）",
       "collocations": "nomadic tribes / lifestyle / bands; digital nomad<br>同义替换：wandering, itinerant, migratory, roaming",
-      "sentence": "Because they rarely depended on a single staple crop, famine was relatively uncommon, and infectious diseases seldom decimated their sparse, <b>nomadic</b> bands."
+      "sentence": "Because they rarely depended on a single staple crop, famine was relatively uncommon, and infectious diseases seldom decimated their sparse, <b>nomadic</b> bands.",
+      "writingTip": "社会变迁对比：The shift from a nomadic existence to permanent urban living fundamentally reshaped human social hierarchy.",
+      "relatedWords": [
+        {
+          "word": "sedentary",
+          "relation": "反义↔",
+          "targetId": 28
+        },
+        {
+          "word": "sparse",
+          "relation": "特征",
+          "targetId": 13
+        }
+      ]
     },
     {
       "id": 15,
@@ -279,7 +343,20 @@
       "phonetic": "/sɜːdʒ/",
       "meaning": "激增，猛涨，急剧上升（雅思小作文高频动词）",
       "collocations": "surge dramatically; a surge in population / demand<br>同义替换：soar, skyrocket, escalate, spike",
-      "sentence": "Paradoxically, while the aggregate supply of calories <b>surged</b>, individual nutrition deteriorated, as monotonous cereal-based diets deprived early farmers of essential vitamins and minerals."
+      "sentence": "Paradoxically, while the aggregate supply of calories <b>surged</b>, individual nutrition deteriorated, as monotonous cereal-based diets deprived early farmers of essential vitamins and minerals.",
+      "writingTip": "小作文动态图高分动词（替代 increase sharply）：Global renewable energy investment surged dramatically over the last decade.",
+      "relatedWords": [
+        {
+          "word": "deteriorated",
+          "relation": "反义对比↔",
+          "targetId": 25
+        },
+        {
+          "word": "swelled",
+          "relation": "近义≈",
+          "targetId": 37
+        }
+      ]
     },
     {
       "id": 25,
@@ -289,7 +366,20 @@
       "phonetic": "/dɪˈtɪəriəreɪt/",
       "meaning": "恶化，变坏，退化（不及物动词，切勿误用被动语态）",
       "collocations": "deteriorate rapidly; environmental / health deterioration<br>同义替换：worsen, decline, degrade, degenerate",
-      "sentence": "Paradoxically, while the aggregate supply of calories surged, individual nutrition <b>deteriorated</b>, as monotonous cereal-based diets deprived early farmers of essential vitamins and minerals."
+      "sentence": "Paradoxically, while the aggregate supply of calories surged, individual nutrition <b>deteriorated</b>, as monotonous cereal-based diets deprived early farmers of essential vitamins and minerals.",
+      "writingTip": "环境/健康恶化高分表达：Without timely policy intervention, urban air quality will continue to deteriorate.",
+      "relatedWords": [
+        {
+          "word": "surged",
+          "relation": "反义对比↔",
+          "targetId": 24
+        },
+        {
+          "word": "compromised",
+          "relation": "近义≈",
+          "targetId": 31
+        }
+      ]
     },
     {
       "id": 26,
@@ -319,7 +409,20 @@
       "phonetic": "/ˈsedntri/",
       "meaning": "定居的（人类学）；久坐不动的（雅思健康类超高频词）",
       "collocations": "sedentary settlements / lifestyle / job<br>同义替换：settled, stationary, inactive, desk-bound",
-      "sentence": "Moreover, dense <b>sedentary</b> settlements became breeding grounds for pathogens that readily jumped from domesticated livestock to human hosts, triggering devastating epidemics unknown to their wandering ancestors."
+      "sentence": "Moreover, dense <b>sedentary</b> settlements became breeding grounds for pathogens that readily jumped from domesticated livestock to human hosts, triggering devastating epidemics unknown to their wandering ancestors.",
+      "writingTip": "健康话题高频词（久坐的/定居的）：A predominantly sedentary lifestyle has been strongly linked to rising rates of chronic illness.",
+      "relatedWords": [
+        {
+          "word": "nomadic",
+          "relation": "反义↔",
+          "targetId": 14
+        },
+        {
+          "word": "longevity",
+          "relation": "影响",
+          "targetId": 32
+        }
+      ]
     },
     {
       "id": 29,
@@ -439,7 +542,20 @@
       "phonetic": "/ˌɡɪldɪd ˈkeɪdʒ/",
       "meaning": "镀金的牢笼（比喻表面富足或光鲜，实则束缚自由与健康的生活处境）",
       "collocations": "trapped in a gilded cage; walk into a gilded cage<br>同义替换：luxurious prison, comfortable trap, golden handcuffs",
-      "sentence": "Thus, incremental generations walked unknowingly into a <b>gilded cage</b>, trading leisure and biological resilience for demographic expansion and the eventual rise of complex civilizations."
+      "sentence": "Thus, incremental generations walked unknowingly into a <b>gilded cage</b>, trading leisure and biological resilience for demographic expansion and the eventual rise of complex civilizations.",
+      "writingTip": "文化/科技反思亮眼隐喻：Algorithmic comfort can quietly turn digital convenience into a gilded cage.",
+      "relatedWords": [
+        {
+          "word": "bargain",
+          "relation": "前文呼应",
+          "targetId": 5
+        },
+        {
+          "word": "resilience",
+          "relation": "代价",
+          "targetId": 41
+        }
+      ]
     },
     {
       "id": 41,
@@ -449,7 +565,20 @@
       "phonetic": "/rɪˈzɪliəns/",
       "meaning": "韧性，复原力，抗压/抵抗能力（雅思心理/生态/社会类高频词）",
       "collocations": "biological / psychological / economic resilience; build resilience<br>同义替换：adaptability, robustness, durability, toughness",
-      "sentence": "Thus, incremental generations walked unknowingly into a gilded cage, trading leisure and biological <b>resilience</b> for demographic expansion and the eventual rise of complex civilizations."
+      "sentence": "Thus, incremental generations walked unknowingly into a gilded cage, trading leisure and biological <b>resilience</b> for demographic expansion and the eventual rise of complex civilizations.",
+      "writingTip": "教育/社会万能高分词：Building psychological resilience is far more vital than shielding students from every setback.",
+      "relatedWords": [
+        {
+          "word": "demographic",
+          "relation": "对比维度",
+          "targetId": 42
+        },
+        {
+          "word": "longevity",
+          "relation": "关联",
+          "targetId": 32
+        }
+      ]
     },
     {
       "id": 42,
@@ -461,5 +590,6 @@
       "collocations": "demographic expansion / shift / dividend / aging<br>同义替换：population-related, populational",
       "sentence": "Thus, incremental generations walked unknowingly into a gilded cage, trading leisure and biological resilience for <b>demographic</b> expansion and the eventual rise of complex civilizations."
     }
-  ]
+  ],
+  "sourceLabel": "📖 Sapiens 风格节选"
 }

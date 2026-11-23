@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lexicon Atelier · 英语精读互动书架</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles-v2.css" />
 </head>
 <body>
   <!-- Top Navigation Bar -->
@@ -20,14 +21,20 @@
 
       <div class="topbar-stats" id="global-stats">
         <div class="stat-chip">📚 讲义 <strong id="stat-docs">0</strong></div>
-        <div class="stat-chip">🔤 词库 <strong id="stat-vocab">0</strong></div>
+        <button class="stat-chip stat-clickable" id="btn-global-vocab" type="button" title="点击开启跨篇全局生词闪卡复习">
+          🔤 词库 <strong id="stat-vocab">0</strong>
+          <span class="stat-action-dot" aria-hidden="true">复习 ↗</span>
+        </button>
         <div class="stat-chip stat-mastered">
           ✅ 已掌握 <strong id="stat-mastered">0</strong> (<span id="stat-rate">0%</span>)
         </div>
       </div>
 
       <div class="topbar-actions">
-        <button class="btn btn-ghost" id="btn-export" title="导出学习进度 JSON 备份">⬇ 导出进度</button>
+        <div class="export-group">
+          <button class="btn btn-ghost" id="btn-export" title="导出学习进度 JSON 备份">⬇ 导出进度</button>
+          <span class="backup-status" id="backup-status">上次备份：从未</span>
+        </div>
         <button class="btn btn-ghost" id="btn-import" title="导入历史进度 JSON">⬆ 导入进度</button>
         <input type="file" id="import-file" accept=".json" hidden />
         <button class="btn btn-icon" id="btn-theme" title="切换护眼浅色 / 暗黑模式">🌙</button>
@@ -50,7 +57,7 @@
       <div class="search-controls">
         <div class="search-box">
           <span class="search-icon">🔍</span>
-          <input type="search" id="search-input" placeholder="搜索书名、标题、考点词汇或标签..." />
+          <input type="search" id="search-input" placeholder="搜索书名、来源、标题、考点词汇或标签..." />
         </div>
         <select id="sort-select" class="select-input" aria-label="排序方式">
           <option value="date-desc">最新日期优先</option>
@@ -62,9 +69,7 @@
       </div>
     </section>
 
-    <section class="catalog-grid" id="catalog-grid">
-      <!-- Cards injected by app.js -->
-    </section>
+    <section class="catalog-grid" id="catalog-grid"></section>
 
     <div class="empty-state hidden" id="catalog-empty">
       <div class="empty-emoji">📭</div>
@@ -78,22 +83,44 @@
       <div class="ws-left">
         <button class="btn btn-outline" id="btn-back">← 返回书架</button>
         <span class="badge genre-badge" id="ws-genre"></span>
+        <span class="badge source-badge hidden" id="ws-source"></span>
         <h2 class="ws-title" id="ws-title"></h2>
         <span class="ws-meta" id="ws-meta"></span>
       </div>
       <div class="ws-actions">
-        <button class="btn btn-ghost" id="btn-toggle-pdf" title="展开/收起 PDF 阅读区">📄 切换双栏</button>
+        <button class="btn btn-ghost" id="btn-toggle-pdf" title="展开/收起左侧阅读区">📄 切换双栏</button>
         <a class="btn btn-outline" id="btn-open-pdf" target="_blank" rel="noopener">↗ 新窗口打开</a>
         <a class="btn btn-primary" id="btn-download-pdf" download>⬇ 下载 PDF</a>
       </div>
     </div>
 
     <div class="workspace-body" id="workspace-body">
-      <!-- Left Pane: Embedded PDF Reader -->
-      <div class="pdf-pane" id="pdf-pane">
-        <iframe id="pdf-frame" title="PDF 精读讲义阅读器"></iframe>
-        <div class="pdf-fallback">
-          <span>若移动端浏览器未直接渲染内嵌 PDF，请点击右上角「新窗口打开」或「下载 PDF」。</span>
+      <!-- Left Pane: Native Interactive HTML Reader + Optional PDF Preview Toggle -->
+      <div class="pdf-pane reader-pane" id="pdf-pane">
+        <div class="reader-toolbar">
+          <div class="reader-legend">
+            <span class="legend-item"><i class="legend-swatch swatch-cet6"></i>CET-6 核心词</span>
+            <span class="legend-item"><i class="legend-swatch swatch-ielts"></i>IELTS 进阶 / 熟词生义</span>
+            <span class="legend-item"><i class="legend-swatch swatch-recur"></i>历史复现词</span>
+          </div>
+          <div class="reader-toolbar-actions">
+            <button class="btn btn-sm btn-outline hidden" id="btn-stop-tts" type="button">⏹ 停止朗读</button>
+            <button class="btn btn-sm btn-outline" id="btn-toggle-pdf-mode" type="button">📄 切换原版 PDF 预览</button>
+          </div>
+        </div>
+
+        <div class="native-reader" id="native-reader">
+          <article class="reader-article">
+            <header class="reader-article-head" id="reader-article-head"></header>
+            <div class="reader-paragraphs" id="reader-paragraphs"></div>
+          </article>
+        </div>
+
+        <div class="pdf-reader-wrap hidden" id="pdf-reader-wrap">
+          <iframe id="pdf-frame" title="PDF 精读讲义阅读器"></iframe>
+          <div class="pdf-fallback">
+            <span>若移动端浏览器未直接渲染内嵌 PDF，请点击右上角「新窗口打开」或「下载 PDF」。</span>
+          </div>
         </div>
       </div>
 
@@ -118,7 +145,17 @@
             </div>
             <div class="panel-sub-actions">
               <input type="search" id="vocab-search" class="mini-search" placeholder="筛选本篇单词..." />
-              <button class="btn btn-sm btn-outline" id="btn-mask-meaning" title="遮盖中文释义进行背词自测">👁️ 隐藏释义</button>
+              <button class="btn btn-sm btn-outline" id="btn-mask-meaning" title="遮盖中文释义进行背词自测 (快捷键 H)">👁️ 隐藏释义</button>
+              <div class="shortcut-wrap">
+                <button class="btn btn-sm btn-ghost" id="btn-shortcuts" type="button" aria-expanded="false" title="查看键盘快捷键">⌨️ 快捷键</button>
+                <div class="shortcut-popover hidden" id="shortcut-popover" role="tooltip">
+                  <div class="sp-title">刷词快捷键（词表 &amp; 闪卡通用）</div>
+                  <div class="sp-row"><kbd>↑</kbd> / <kbd>↓</kbd><span>切换上一词 / 下一词</span></div>
+                  <div class="sp-row"><kbd>Space</kbd><span>播放当前词发音</span></div>
+                  <div class="sp-row"><kbd>H</kbd><span>隐藏/显示释义（闪卡翻转）</span></div>
+                  <div class="sp-row"><kbd>Enter</kbd><span>切换「已掌握」状态</span></div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="vocab-list" id="vocab-list"></div>
@@ -126,7 +163,8 @@
 
         <!-- Tab 2: Complex Sentences -->
         <div class="tab-panel" id="panel-sentences">
-          <div class="panel-controls">
+          <div class="panel-controls sent-controls">
+            <button class="btn btn-sm btn-outline" id="btn-hide-en-sent" type="button">👁️ 遮挡英文原句（汉译英自测）</button>
             <span class="hint-text">点击「复制模板」可直接粘贴到你的雅思/六级写作笔记中</span>
           </div>
           <div class="sentences-list" id="sentences-list"></div>
@@ -152,7 +190,7 @@
                   <button class="btn btn-sm btn-outline fc-tts-btn" data-accent="en-GB">🇬🇧 英音朗读</button>
                   <button class="btn btn-sm btn-outline fc-tts-btn" data-accent="en-US">🇺🇸 美音朗读</button>
                 </div>
-                <div class="fc-tip">点击卡片或按空格键翻转查看释义与原句</div>
+                <div class="fc-tip">点击卡片或按 H 翻转 · Space 朗读 · Enter 标记已掌握</div>
               </div>
               <div class="fc-face fc-back">
                 <div class="fc-back-word" id="fc-back-word">Word</div>
@@ -184,9 +222,99 @@
     </div>
   </section>
 
+  <!-- Hover Word Tooltip (Left Native Reader) -->
+  <div class="word-tooltip hidden" id="word-tooltip" role="dialog" aria-label="单词快捷预览">
+    <div class="tt-head">
+      <div class="tt-title-wrap">
+        <strong class="tt-word" id="tt-word"></strong>
+        <span class="mini-tag" id="tt-badge"></span>
+      </div>
+      <div class="tt-tts">
+        <button class="tts-mini" id="tt-gb" type="button" title="英音朗读">GB 🔊</button>
+        <button class="tts-mini" id="tt-us" type="button" title="美音朗读">US 🔊</button>
+      </div>
+    </div>
+    <div class="tt-phonetic" id="tt-phonetic"></div>
+    <div class="tt-meaning" id="tt-meaning"></div>
+    <div class="tt-foot">
+      <span class="tt-hint">点击正文词条定位至右侧详情</span>
+    </div>
+  </div>
+
+  <!-- Global Vocabulary Review Drawer -->
+  <div class="drawer-overlay hidden" id="global-review-overlay" role="dialog" aria-modal="true" aria-label="全局生词本与跨篇闪卡复习">
+    <div class="review-drawer">
+      <div class="drawer-head">
+        <div>
+          <h2 class="drawer-title">🔤 全局生词本 · 跨篇闪卡复习</h2>
+          <p class="drawer-sub" id="gr-count-info">正在汇总所有讲义中的未掌握与需复习词汇...</p>
+        </div>
+        <button class="btn btn-ghost" id="btn-close-global-review" type="button">✕ 关闭</button>
+      </div>
+
+      <div class="drawer-filters">
+        <div class="filter-pills" id="gr-filters">
+          <button class="mini-pill active" data-gr-filter="all">全部错词/未掌握</button>
+          <button class="mini-pill" data-gr-filter="review">🔖 仅需复习</button>
+          <button class="mini-pill pill-cet6" data-gr-filter="cet6">仅 CET-6</button>
+          <button class="mini-pill pill-ielts" data-gr-filter="ielts">仅 IELTS</button>
+        </div>
+        <div class="fc-counter" id="gr-counter">0 / 0</div>
+      </div>
+
+      <div class="drawer-body" id="gr-stage-wrap">
+        <div class="flashcard-stage drawer-fc-stage">
+          <div class="flashcard" id="gr-flashcard" tabindex="0" role="button" aria-label="点击翻转全局闪卡">
+            <div class="fc-face fc-front">
+              <div class="gr-source-pill" id="gr-source-tag"></div>
+              <div class="fc-tags" id="gr-front-tags"></div>
+              <div class="fc-word" id="gr-word">Word</div>
+              <div class="fc-phonetic" id="gr-phonetic">/phonetic/</div>
+              <div class="fc-tts-row">
+                <button class="btn btn-sm btn-outline gr-tts-btn" data-accent="en-GB" type="button">🇬🇧 英音朗读</button>
+                <button class="btn btn-sm btn-outline gr-tts-btn" data-accent="en-US" type="button">🇺🇸 美音朗读</button>
+              </div>
+              <div class="fc-tip">点击卡片查看释义、同义替换与出处例句</div>
+            </div>
+            <div class="fc-face fc-back">
+              <div class="fc-back-word" id="gr-back-word">Word</div>
+              <div class="fc-section">
+                <div class="fc-label">考点含义 &amp; 语境生义</div>
+                <div class="fc-text" id="gr-meaning"></div>
+              </div>
+              <div class="fc-section">
+                <div class="fc-label">高频搭配 &amp; 雅思同义替换</div>
+                <div class="fc-text" id="gr-colloc"></div>
+              </div>
+              <div class="fc-section">
+                <div class="fc-label">出处原句</div>
+                <div class="fc-text fc-sentence" id="gr-sentence"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fc-controls">
+          <button class="btn btn-outline" id="gr-prev" type="button">⬅ 上一张</button>
+          <button class="btn btn-warn" id="gr-mark-review" type="button">🔖 仍需复习</button>
+          <button class="btn btn-success" id="gr-mark-mastered" type="button">✅ 已掌握</button>
+          <button class="btn btn-outline" id="gr-shuffle" type="button">🔀 随机打乱</button>
+          <button class="btn btn-outline" id="gr-next" type="button">下一张 ➡</button>
+        </div>
+      </div>
+
+      <div class="empty-state hidden" id="gr-empty">
+        <div class="empty-emoji">🎉</div>
+        <p>当前筛选下没有待复习生词，太棒了！</p>
+      </div>
+    </div>
+  </div>
+
   <!-- Toast Notification -->
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
+  <script src="workbench.js"></script>
+  <script src="global-review.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
