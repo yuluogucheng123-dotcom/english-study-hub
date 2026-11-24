@@ -1,5 +1,42 @@
 [
   {
+    "id": "wechat-split-emoji-day3",
+    "title": "The Split Smiley: Decoding China's Emoji Psychology",
+    "genre": "外刊",
+    "sourceLabel": "📰 China Daily 外刊精读",
+    "day": 3,
+    "date": "2026-11-24",
+    "summary": "从微信「裂开」表情包走红切入，剖析表情包作为文化专属流通符号的语义演变，以及中国年轻人在社交媒体中的微妙情绪与代际心理。",
+    "wordCount": 596,
+    "vocabCount": 30,
+    "sentenceCount": 4,
+    "tags": [
+      "CET-6",
+      "IELTS 7.5+",
+      "社交媒体",
+      "文化心理"
+    ],
+    "keywords": [
+      "discrepancies",
+      "provenance",
+      "boiled down to",
+      "cliché",
+      "viral",
+      "denote",
+      "elusive",
+      "grin and bear it",
+      "exclusive",
+      "currency",
+      "savvy",
+      "surfaced",
+      "befuddled",
+      "subtleties",
+      "take for granted"
+    ],
+    "pdfPath": "assets/pdfs/WeChat_Split_Emoji_Day3_2026-11-24.pdf",
+    "dataPath": "data/entries/wechat-split-emoji-day3.json"
+  },
+  {
     "id": "re-raising-parents-day2",
     "title": "Re-raising Parents: China's New Filial Piety",
     "genre": "外刊",

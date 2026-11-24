@@ -1,0 +1,469 @@
+{
+  "id": "wechat-split-emoji-day3",
+  "title": "The Split Smiley: Decoding China's Emoji Psychology",
+  "genre": "外刊",
+  "sourceLabel": "📰 China Daily 外刊精读",
+  "day": 3,
+  "date": "2026-11-24",
+  "wordCount": 596,
+  "paragraphs": [
+    "The Chinese messaging app WeChat introduced several emojis into its official stock, and the old flat smiley face has suddenly split up.",
+    "Take the simplest of all emojis, the round smiley face, cut it in half along the axis, and there you have it.",
+    "Despite some discrepancies over details, different accounts of the emoji's provenance found online all boiled down to some social media cliché: a viral moment when an internet celebrity accidentally said \"I'm about to explode,\" reportedly in frustration during a video game livestream, and somehow sticking to social media's collective memory in the form of a hashtag long enough for the WeChat's coders to notice and visualize it.",
+    "Upon seeing it, one would guess it stands for a schizophrenic kind of mindset. But what it's intended to denote can be a little more elusive, more so if explained in English: somewhere between \"exploding with annoyance\" and \"grin and bear it,\" probably closer to the former.",
+    "Like verbal vocabulary, emojis can be a culturally exclusive currency that makes little sense to people outside its territory of circulation. Many emojis popular with Chinese youngsters today have features and usages that puzzle not only non-native speakers but also local users that are less social media savvy. Amusing reports have surfaced across China that befuddled schoolteachers are offered training sessions on the subtleties of the emojis their students take for granted.",
+    "Whether the teachers will ever succeed in catching up is in doubt. The bank of emojis is multiplying with completely new designs as well as mutants of the old ones that could go out of currency overnight, not to mention the shifting nuances attached to them, conditioned by the contexts and also subject to individual interpretation.",
+    "The smiley face emoji of which the schizophrenic looking new one is a variation, for example, does not serve to signal nodding in agreement or approval anymore. If you ever receive it from a Chinese friend, beware it's more likely implying \"nonsense such as your words are, I'm putting up with them,\" politely, one step short of a snub.",
+    "Now in two halves, the old smiley face's \"couldn't-be-bothered\" undertone has been enhanced by a notch to suggest \"I am seriously bothered now that my smile is broken but still hanging\" or \"hanging but broken,\" depending on which sentiment you want to highlight the most with the split face.",
+    "With hundreds of millions of users, WeChat can hardly launch any new product without causing fanfare. The booming need for more creative and personalized self-expression also contribute to the multiplication of emojis and digital stickers. Similar sensation comes wave after wave with new ideas and hashtags, but they also dwindle as fast as users get used to the new things.",
+    "The interesting phenomenon is that, increasingly, the emojis have started conveying subtle emotions. They are no longer a visual substitute for words, which prioritizes straightforwardness. They have become a capsule of meaning that, if dissolved, would translate into a lengthy explanation. The psychological narrative embedded in the emojis like the smiling split face reflects the inner conflicts characteristic of young people's socialization.",
+    "Through the emojis, they find many who are sharing their frustration, struggle and confusion. Together their voice has been magnified, and these feelings that usually stop on the tip of one's tongue now find their way out through the tip of the fingers. With more sophisticated emojis, it almost feels as if China's social media psychology is growing out of its puberty – the grown-up world is full of confrontation and even more compromise; a forced smile is exhausting but necessary."
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "original": "Like verbal vocabulary, emojis can be a culturally exclusive currency that makes little sense to people outside its territory of circulation.",
+      "zhTranslation": "就像口头词汇一样，表情包也可以是一种具有文化排他性的流通符号，对于其流通领域之外的人而言几乎毫无意义。",
+      "backbone": "<b>emojis</b> (主语) <b>can be</b> (系动词) <b>a culturally exclusive currency</b> (表语).",
+      "grammar": "1. <b>类比状语前置</b>：<code>Like verbal vocabulary</code> 用语言词汇类比表情包，引出精妙隐喻 <code>culturally exclusive currency</code>（文化专属流通媒介，活用 <code>currency</code> 熟词生义）。<br>2. <b>that 引导限制性定语从句</b>：<code>that makes little sense to people outside its territory of circulation</code> 解释“文化排他性”的含义，其中 <code>territory of circulation</code>（流通领域）延续了 <code>currency</code> 的货币隐喻，修辞极其连贯。",
+      "template": "<b>【雅思大作文文化/语言类比论证模板】</b><br>Like [常见事物A], [讨论对象B] can be a culturally exclusive currency that makes little sense to people outside its territory of circulation.<br><b>【备考仿写示例（方言与网络流行语话题）】</b><br>Like local dialects, internet slang can be a culturally exclusive currency that makes little sense to people outside its digital community."
+    },
+    {
+      "id": 2,
+      "original": "The bank of emojis is multiplying with completely new designs as well as mutants of the old ones that could go out of currency overnight, not to mention the shifting nuances attached to them, conditioned by the contexts and also subject to individual interpretation.",
+      "zhTranslation": "表情包库正随着全新设计以及可能一夜过时的旧版变体而迅速扩张，更不用说附着在其上的不断变化的微妙含义——这些含义受语境制约，同时也取决于个人解读。",
+      "backbone": "<b>The bank of emojis</b> (主语) <b>is multiplying</b> (谓语).",
+      "grammar": "1. <b>递进结构</b>：<code>not to mention...</code>（更不用说……）引出比数量激增更深层的问题——语义流变。<br>2. <b>多层过去分词后置定语</b>：<code>attached to them</code>、<code>conditioned by the contexts</code>（受语境制约）与 <code>subject to individual interpretation</code>（取决于个人解读）三重修饰 <code>shifting nuances</code>，信息密度极高而不冗长。<br>3. <b>地道习语</b>：<code>go out of currency overnight</code>（一夜之间不再流行/过时）。",
+      "template": "<b>【雅思大作文复杂演变递进模板】</b><br>[现象/体系] is multiplying with [新要素], not to mention the shifting nuances attached to it, conditioned by [外部因素] and also subject to [主观因素].<br><b>【备考仿写示例（新闻媒体与信息传播话题）】</b><br>Online discourse is multiplying with new platforms, not to mention the shifting nuances attached to public opinions, conditioned by algorithmic feeds and also subject to individual interpretation."
+    },
+    {
+      "id": 3,
+      "original": "They have become a capsule of meaning that, if dissolved, would translate into a lengthy explanation. The psychological narrative embedded in the emojis like the smiling split face reflects the inner conflicts characteristic of young people's socialization.",
+      "zhTranslation": "它们已成为一颗浓缩意义的胶囊，一旦溶解，便会转化为长篇大论的解释。诸如「裂开笑脸」这类表情包中所蕴含的心理叙事，折射出当代年轻人社会化过程中特有的内心冲突。",
+      "backbone": "<b>They</b> <b>have become</b> <b>a capsule of meaning</b>; <b>The psychological narrative</b> <b>reflects</b> <b>the inner conflicts</b>.",
+      "grammar": "1. <b>插入式条件状语省略句 + 虚拟语气</b>：<code>that, if dissolved, would translate into...</code>（<code>if [it were] dissolved</code>），将表情包比作“意义胶囊”，<code>translate into</code> 表示“转化为”。<br>2. <b>过去分词 + 形容词短语双后置定语</b>：<code>embedded in the emojis</code> 修饰 <code>narrative</code>；<code>characteristic of young people's socialization</code>（……所特有的）修饰 <code>inner conflicts</code>，极其凝练的学术书面表达。",
+      "template": "<b>【雅思大作文深层现象剖析模板】</b><br>[载体] has become a capsule of meaning that, if unpacked, would translate into a lengthy explanation. The psychological narrative embedded in [具体例子] reflects the inner conflicts characteristic of [社会群体/阶段].<br><b>【备考仿写示例（短视频与现代人解压方式）】</b><br>Short videos have become a capsule of emotion that, if unpacked, would translate into a lengthy confession. The psychological narrative embedded in viral memes reflects the subtle anxieties characteristic of modern urban life."
+    },
+    {
+      "id": 4,
+      "original": "Together their voice has been magnified, and these feelings that usually stop on the tip of one's tongue now find their way out through the tip of the fingers.",
+      "zhTranslation": "汇聚在一起，他们的声音被放大了；那些平时话到嘴边却难以启齿的情绪，如今通过指尖找到了宣泄的出口。",
+      "backbone": "<b>their voice</b> <b>has been magnified</b>, and <b>these feelings</b> <b>now find</b> <b>their way out</b>.",
+      "grammar": "1. <b>精妙对称修辞（Antithesis）</b>：<code>stop on the tip of one's tongue</code>（止步于舌尖/话到嘴边说不出口）与 <code>find their way out through the tip of the fingers</code>（通过指尖找到出口）形成极具画面感的对比，堪称外刊金句典范。<br>2. <b>被动语态 + 动态短语</b>：<code>be magnified</code>（被放大）与 <code>find one's way out</code>（找到宣泄/释放的途径）让抽象的心理表达极具感染力。",
+      "template": "<b>【雅思/六级大作文情感与媒介升华结尾模板】</b><br>Together their voice has been magnified, and these feelings that usually stop on the tip of one's tongue now find their way out through [媒介/渠道].<br><b>【备考仿写示例（线上社区与心理支持话题）】</b><br>Together their quiet struggles have been magnified, and the anxieties that usually stop on the tip of one's tongue now find their way out through anonymous online communities."
+    }
+  ],
+  "vocab": [
+    {
+      "id": 1,
+      "match": "discrepancies",
+      "type": "ielts",
+      "word": "discrepancy / n.",
+      "phonetic": "/dɪˈskrepənsi/",
+      "meaning": "差异，不一致，出入（多指数据、说法或账目间的矛盾）",
+      "collocations": "discrepancies over details; glaring / wide discrepancy between A and B<br>同义替换：inconsistency, divergence, disparity, mismatch",
+      "sentence": "Despite some <b>discrepancies</b> over details, different accounts of the emoji's provenance found online all boiled down to some social media cliché…",
+      "writingTip": "雅思图表/社会公平高分词：There remains a glaring discrepancy between urban and rural access to quality healthcare."
+    },
+    {
+      "id": 2,
+      "match": "provenance",
+      "type": "ielts",
+      "word": "provenance / n.",
+      "phonetic": "/ˈprɒvənəns/",
+      "meaning": "出处，起源，来历（尤指艺术品、概念或网络梗的渊源，雅思阅读 8 分词）",
+      "collocations": "the provenance of an emoji / artifact; of uncertain provenance<br>同义替换：origin, source, pedigree, root",
+      "sentence": "Despite some discrepancies over details, different accounts of the emoji's <b>provenance</b> found online all boiled down to some social media cliché…"
+    },
+    {
+      "id": 3,
+      "match": "boiled down to",
+      "type": "ielts",
+      "word": "boil down to / phr.",
+      "phonetic": "/bɔɪl daʊn tuː/",
+      "meaning": "归结为，概括起来就是（提炼复杂问题的核心本质）",
+      "collocations": "boil down to a simple fact / question of money<br>同义替换：come down to, amount to, essentially be",
+      "sentence": "…different accounts of the emoji's provenance found online all <b>boiled down to</b> some social media cliché…",
+      "writingTip": "议论文总结段高分短语：Ultimately, the debate over remote work boils down to a balance between autonomy and collaboration."
+    },
+    {
+      "id": 4,
+      "match": "cliché",
+      "type": "ielts",
+      "word": "cliché / n.",
+      "phonetic": "/ˈkliːʃeɪ/",
+      "meaning": "陈词滥调，老套桥段，俗套（外刊文化评论高频词）",
+      "collocations": "a social media cliché; sound like a cliché; avoid clichés<br>同义替换：platitude, truism, hackneyed phrase, stereotype",
+      "sentence": "…all boiled down to some social media <b>cliché</b>: a viral moment when an internet celebrity accidentally said \"I'm about to explode\"…"
+    },
+    {
+      "id": 5,
+      "match": "viral",
+      "type": "cet6",
+      "word": "viral / adj.",
+      "phonetic": "/ˈvaɪrəl/",
+      "meaning": "熟义：病毒引起的。<br><b>本篇语境：病毒式传播的，在网络上迅速走红的</b>",
+      "collocations": "a viral moment / video; go viral overnight<br>同义替换：widely circulated, trending, wildly popular",
+      "sentence": "…a <b>viral</b> moment when an internet celebrity accidentally said \"I'm about to explode,\" reportedly in frustration during a video game livestream…",
+      "relatedWords": [
+        {
+          "word": "fanfare",
+          "relation": "热度",
+          "targetId": 21
+        },
+        {
+          "word": "dwindle",
+          "relation": "反义消退↔",
+          "targetId": 22
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "match": "denote",
+      "type": "ielts",
+      "word": "denote / v.",
+      "phonetic": "/dɪˈnəʊt/",
+      "meaning": "表示，意指，象征（比 mean 更正式的学术与语言学动词）",
+      "collocations": "be intended to denote; denote status / emotion<br>同义替换：signify, indicate, represent, stand for",
+      "sentence": "But what it's intended to <b>denote</b> can be a little more elusive, more so if explained in English…",
+      "relatedWords": [
+        {
+          "word": "conveying",
+          "relation": "近义≈",
+          "targetId": 23
+        },
+        {
+          "word": "undertone",
+          "relation": "隐含义",
+          "targetId": 19
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "match": "elusive",
+      "type": "ielts",
+      "word": "elusive / adj.",
+      "phonetic": "/ɪˈluːsɪv/",
+      "meaning": "难以捉摸的，难以界定的，不易实现的（雅思阅读/写作高频词）",
+      "collocations": "remain elusive; an elusive concept / goal / consensus<br>同义替换：hard to pin down, intangible, slippery, evasive",
+      "sentence": "But what it's intended to denote can be a little more <b>elusive</b>, more so if explained in English…",
+      "writingTip": "社会/科技难题高分句：A universal consensus on regulating artificial intelligence remains remarkably elusive."
+    },
+    {
+      "id": 8,
+      "match": "grin and bear it",
+      "type": "ielts",
+      "word": "grin and bear it / phr.",
+      "phonetic": "/ɡrɪn ænd beər ɪt/",
+      "meaning": "强颜欢笑，忍气吞声，咬牙忍受（极其地道的外刊习语）",
+      "collocations": "have no choice but to grin and bear it<br>同义替换：put up with it stoically, endure with a forced smile",
+      "sentence": "…somewhere between \"exploding with annoyance\" and \"<b>grin and bear it</b>,\" probably closer to the former.",
+      "relatedWords": [
+        {
+          "word": "compromise",
+          "relation": "呼应",
+          "targetId": 30
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "match": "exclusive",
+      "type": "cet6",
+      "word": "exclusive / adj.",
+      "phonetic": "/ɪkˈskluːsɪv/",
+      "meaning": "独有的，排他的，专属的；高档的；独家的（exclusively 仅仅）",
+      "collocations": "culturally exclusive; exclusive rights / interview; mutually exclusive<br>同义替换：restricted, unique, proprietary, sole",
+      "sentence": "Like verbal vocabulary, emojis can be a culturally <b>exclusive</b> currency that makes little sense to people outside its territory of circulation."
+    },
+    {
+      "id": 10,
+      "match": "currency",
+      "type": "ielts",
+      "word": "currency / n.",
+      "phonetic": "/ˈkʌrənsi/",
+      "meaning": "熟义：货币，通货。<br><b>本篇语境生义：流行，通用，流通的符号媒介（go out of currency 过时）</b>",
+      "collocations": "gain / lose currency; go out of currency; culturally exclusive currency<br>同义替换：prevalence, circulation, acceptance, medium",
+      "sentence": "Like verbal vocabulary, emojis can be a culturally exclusive <b>currency</b> that makes little sense to people outside its territory of circulation.",
+      "writingTip": "熟词生义亮眼表达：The idea of a four-day workweek has gained wide currency among technology firms."
+    },
+    {
+      "id": 11,
+      "match": "savvy",
+      "type": "ielts",
+      "word": "savvy / adj. & n.",
+      "phonetic": "/ˈsævi/",
+      "meaning": "adj. 精通的，懂行的，精明的（常构成复合词 tech-savvy / media-savvy）；n. 悟性，精明",
+      "collocations": "social media savvy; tech-savvy consumers; business savvy<br>同义替换：knowledgeable, well-versed, street-smart, astute",
+      "sentence": "Many emojis popular with Chinese youngsters today have features and usages that puzzle not only non-native speakers but also local users that are less social media <b>savvy</b>.",
+      "writingTip": "科技与消费话题高频词：Even tech-savvy consumers can fall prey to deceptive algorithmic pricing."
+    },
+    {
+      "id": 12,
+      "match": "surfaced",
+      "type": "ielts",
+      "word": "surface / v.",
+      "phonetic": "/ˈsɜːfɪs/",
+      "meaning": "熟义：n. 表面。<br><b>本篇语境生义：v. 浮出水面，出现，曝光（新闻、问题、传闻等）</b>",
+      "collocations": "reports / allegations / evidence surfaced<br>同义替换：emerge, come to light, crop up, appear",
+      "sentence": "Amusing reports have <b>surfaced</b> across China that befuddled schoolteachers are offered training sessions on the subtleties of the emojis their students take for granted."
+    },
+    {
+      "id": 13,
+      "match": "befuddled",
+      "type": "ielts",
+      "word": "befuddled / adj.",
+      "phonetic": "/bɪˈfʌdld/",
+      "meaning": "困惑的，一头雾水的，糊涂的（比 confused 更具画面感与外刊色彩）",
+      "collocations": "befuddled teachers / onlookers; look completely befuddled<br>同义替换：baffled, perplexed, bewildered, puzzled",
+      "sentence": "Amusing reports have surfaced across China that <b>befuddled</b> schoolteachers are offered training sessions on the subtleties of the emojis…"
+    },
+    {
+      "id": 14,
+      "match": "subtleties",
+      "type": "ielts",
+      "word": "subtlety / n.",
+      "phonetic": "/ˈsʌtlti/",
+      "meaning": "微妙之处，细微差别，精妙（形容词 subtle）",
+      "collocations": "the subtleties of language / emojis; appreciate the subtleties<br>同义替换：nuance, delicacy, intricacy, fine distinction",
+      "sentence": "…befuddled schoolteachers are offered training sessions on the <b>subtleties</b> of the emojis their students take for granted.",
+      "relatedWords": [
+        {
+          "word": "nuances",
+          "relation": "近义≈",
+          "targetId": 16
+        },
+        {
+          "word": "undertone",
+          "relation": "潜台词",
+          "targetId": 19
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "match": "take for granted",
+      "type": "cet6",
+      "word": "take ... for granted / phr.",
+      "phonetic": "/teɪk fə ˈɡrɑːntɪd/",
+      "meaning": "认为……理所当然，对……习以为常（不加珍惜或默认成立）",
+      "collocations": "take sth. for granted; never take one's health for granted<br>同义替换：assume without question, overlook, undervalue",
+      "sentence": "…training sessions on the subtleties of the emojis their students <b>take for granted</b>."
+    },
+    {
+      "id": 16,
+      "match": "nuances",
+      "type": "ielts",
+      "word": "nuance / n.",
+      "phonetic": "/ˈnjuːɑːns/",
+      "meaning": "细微差别，微妙含义/色调（雅思写作与阅读高频 8 分词）",
+      "collocations": "shifting nuances; capture the nuances of; nuanced view / argument<br>同义替换：subtlety, shade of meaning, refinement",
+      "sentence": "…not to mention the shifting <b>nuances</b> attached to them, conditioned by the contexts and also subject to individual interpretation.",
+      "writingTip": "文化与翻译话题高分词：Machine translation still struggles to capture the cultural nuances of idiomatic expressions.",
+      "relatedWords": [
+        {
+          "word": "subtleties",
+          "relation": "近义≈",
+          "targetId": 14
+        },
+        {
+          "word": "sophisticated",
+          "relation": "精妙",
+          "targetId": 29
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "match": "variation",
+      "type": "cet6",
+      "word": "variation / n.",
+      "phonetic": "/ˌveəriˈeɪʃn/",
+      "meaning": "变体，变化，差异，变奏（动词 vary）",
+      "collocations": "a variation of; regional / seasonal variation; wide variation<br>同义替换：variant, version, modification, divergence",
+      "sentence": "The smiley face emoji of which the schizophrenic looking new one is a <b>variation</b>, for example, does not serve to signal nodding in agreement or approval anymore."
+    },
+    {
+      "id": 18,
+      "match": "snub",
+      "type": "ielts",
+      "word": "snub / n. & v.",
+      "phonetic": "/snʌb/",
+      "meaning": "n. 冷落，怠慢，轻蔑的拒绝；v. 冷落，不理睬",
+      "collocations": "one step short of a snub; a diplomatic snub; snub an invitation<br>同义替换：slight, rebuff, cold shoulder, brush-off",
+      "sentence": "If you ever receive it from a Chinese friend, beware it's more likely implying \"nonsense such as your words are, I'm putting up with them,\" politely, one step short of a <b>snub</b>."
+    },
+    {
+      "id": 19,
+      "match": "undertone",
+      "type": "ielts",
+      "word": "undertone / n.",
+      "phonetic": "/ˈʌndətəʊn/",
+      "meaning": "潜在含义，弦外之音，暗含情绪；低沉的说话声",
+      "collocations": "political / ironic undertone; speak in an undertone<br>同义替换：undercurrent, implication, overtone, subtext",
+      "sentence": "Now in two halves, the old smiley face's \"couldn't-be-bothered\" <b>undertone</b> has been enhanced by a notch…",
+      "relatedWords": [
+        {
+          "word": "sentiment",
+          "relation": "情绪",
+          "targetId": 20
+        },
+        {
+          "word": "denote",
+          "relation": "明示↔",
+          "targetId": 6
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "match": "sentiment",
+      "type": "cet6",
+      "word": "sentiment / n.",
+      "phonetic": "/ˈsentɪmənt/",
+      "meaning": "情绪，态度，观点，情怀（常指群体或社会层面的情感倾向）",
+      "collocations": "public / anti-war sentiment; express / echo a sentiment<br>同义替换：feeling, emotion, attitude, mood",
+      "sentence": "…depending on which <b>sentiment</b> you want to highlight the most with the split face.",
+      "writingTip": "社会舆情高频词：Public sentiment toward data privacy has shifted dramatically following recent breaches."
+    },
+    {
+      "id": 21,
+      "match": "fanfare",
+      "type": "ielts",
+      "word": "fanfare / n.",
+      "phonetic": "/ˈfænfeə(r)/",
+      "meaning": "大张旗鼓，轰动，喧嚣造势（原指号角齐鸣；常考 without fanfare / with much fanfare）",
+      "collocations": "cause fanfare; launched with much fanfare; without fanfare<br>同义替换：hype, publicity, clamor, sensation",
+      "sentence": "With hundreds of millions of users, WeChat can hardly launch any new product without causing <b>fanfare</b>.",
+      "relatedWords": [
+        {
+          "word": "viral",
+          "relation": "爆红",
+          "targetId": 5
+        },
+        {
+          "word": "dwindle",
+          "relation": "反义消退↔",
+          "targetId": 22
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "match": "dwindle",
+      "type": "ielts",
+      "word": "dwindle / v.",
+      "phonetic": "/ˈdwɪndl/",
+      "meaning": "逐渐减少，消退，萎缩（雅思图表作文与生态/趋势阅读高频词）",
+      "collocations": "dwindle away / down to; dwindling resources / enthusiasm<br>同义替换：diminish, wane, shrink, subside",
+      "sentence": "Similar sensation comes wave after wave with new ideas and hashtags, but they also <b>dwindle</b> as fast as users get used to the new things.",
+      "writingTip": "动态图/环保话题高分动词：As fossil fuel reserves steadily dwindle, governments must accelerate the transition to clean energy."
+    },
+    {
+      "id": 23,
+      "match": "conveying",
+      "type": "cet6",
+      "word": "convey / v.",
+      "phonetic": "/kənˈveɪ/",
+      "meaning": "传达，表达（情感、信息、意思）；运送，输送",
+      "collocations": "convey subtle emotions / a message / meaning<br>同义替换：communicate, express, impart, transmit",
+      "sentence": "The interesting phenomenon is that, increasingly, the emojis have started <b>conveying</b> subtle emotions.",
+      "relatedWords": [
+        {
+          "word": "denote",
+          "relation": "近义≈",
+          "targetId": 6
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "match": "substitute",
+      "type": "cet6",
+      "word": "substitute / n. & v.",
+      "phonetic": "/ˈsʌbstɪtjuːt/",
+      "meaning": "n. 替代品，替身；v. 用……代替（substitute A for B 用 A 取代 B）",
+      "collocations": "a visual substitute for words; no substitute for hard work<br>同义替换：replacement, stand-in, proxy, alternative",
+      "sentence": "They are no longer a visual <b>substitute</b> for words, which prioritizes straightforwardness."
+    },
+    {
+      "id": 25,
+      "match": "prioritizes",
+      "type": "cet6",
+      "word": "prioritize / v.",
+      "phonetic": "/praɪˈɒrətaɪz/",
+      "meaning": "优先考虑，把……放在首位，按轻重缓急排序（名词 priority）",
+      "collocations": "prioritize straightforwardness / efficiency / well-being<br>同义替换：put first, give precedence to, rank first",
+      "sentence": "They are no longer a visual substitute for words, which <b>prioritizes</b> straightforwardness.",
+      "writingTip": "雅思政策类大作文高频动词：Urban planners should prioritize pedestrian safety and green spaces over highway expansion."
+    },
+    {
+      "id": 26,
+      "match": "dissolved",
+      "type": "cet6",
+      "word": "dissolve / v.",
+      "phonetic": "/dɪˈzɒlv/",
+      "meaning": "溶解，融化；消解，消除；解散（议会、婚姻等）",
+      "collocations": "dissolve in water; dissolve a capsule / partnership / tension<br>同义替换：melt, break down, disband, dissipate",
+      "sentence": "They have become a capsule of meaning that, if <b>dissolved</b>, would translate into a lengthy explanation."
+    },
+    {
+      "id": 27,
+      "match": "embedded",
+      "type": "ielts",
+      "word": "embedded / adj. (v. embed)",
+      "phonetic": "/ɪmˈbedɪd/",
+      "meaning": "嵌入的，深植于……的，根深蒂固的（雅思文化/科技/社会学核心词）",
+      "collocations": "embedded in culture / emojis; deeply embedded values<br>同义替换：ingrained, rooted, woven into, built-in",
+      "sentence": "The psychological narrative <b>embedded</b> in the emojis like the smiling split face reflects the inner conflicts characteristic of young people's socialization.",
+      "writingTip": "文化价值观高频搭配：Respect for elders is deeply embedded in East Asian social norms."
+    },
+    {
+      "id": 28,
+      "match": "magnified",
+      "type": "cet6",
+      "word": "magnify / v.",
+      "phonetic": "/ˈmæɡnɪfaɪ/",
+      "meaning": "放大，扩大；夸大，加剧（magnifying glass 放大镜）",
+      "collocations": "magnify one's voice / anxiety / risks<br>同义替换：amplify, intensify, heighten, enlarge",
+      "sentence": "Together their voice has been <b>magnified</b>, and these feelings that usually stop on the tip of one's tongue now find their way out through the tip of the fingers.",
+      "writingTip": "社交媒体影响万能句：Echo chambers on social media often magnify minor disagreements into polarized conflicts."
+    },
+    {
+      "id": 29,
+      "match": "sophisticated",
+      "type": "cet6",
+      "word": "sophisticated / adj.",
+      "phonetic": "/səˈfɪstɪkeɪtɪd/",
+      "meaning": "复杂精妙的，精密的；成熟的，老练的，富有品味的",
+      "collocations": "sophisticated emojis / algorithms / audience<br>同义替换：intricate, nuanced, refined, advanced",
+      "sentence": "With more <b>sophisticated</b> emojis, it almost feels as if China's social media psychology is growing out of its puberty…",
+      "relatedWords": [
+        {
+          "word": "nuances",
+          "relation": "呼应",
+          "targetId": 16
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "match": "compromise",
+      "type": "cet6",
+      "word": "compromise / n. & v.",
+      "phonetic": "/ˈkɒmprəmaɪz/",
+      "meaning": "n. 妥协，折中，让步；v. 妥协；<b>熟词生义：损害，危及（同 Day 1 复现词！）</b>",
+      "collocations": "reach a compromise; full of confrontation and compromise; compromise health<br>同义替换：concession, trade-off, middle ground, undermine",
+      "sentence": "…the grown-up world is full of confrontation and even more <b>compromise</b>; a forced smile is exhausting but necessary.",
+      "relatedWords": [
+        {
+          "word": "grin and bear it",
+          "relation": "呼应",
+          "targetId": 8
+        }
+      ]
+    }
+  ]
+}
